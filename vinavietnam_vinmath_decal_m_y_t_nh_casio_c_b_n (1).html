@@ -1,0 +1,2273 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VinaVietnam &amp; VinMath | Decal Máy Tính Casio Độc Bản — Tổ 4 (11A12)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          },
+          colors: {
+            ivory: '#FDFBF7',
+            ocean: {
+              50: '#F0FDFA',
+              100: '#CCFBF1',
+              500: '#14B8A6',
+              600: '#0D9488',
+              700: '#0F766E',
+              800: '#115E59',
+            },
+            coral: {
+              50: '#FFF1F2',
+              100: '#FFE4E6',
+              500: '#F43F5E',
+              600: '#E11D48',
+            },
+            sunset: '#F97316',
+            ink: '#1E293B',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-7px) rotate(0.6deg); }
+    }
+    .animate-float-slow {
+      animation: floatSlow 5.5s ease-in-out infinite;
+    }
+    .matte-vinyl-sheen {
+      background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.25) 0%,
+        rgba(255, 255, 255, 0.03) 40%,
+        rgba(15, 23, 42, 0.04) 72%,
+        rgba(255, 255, 255, 0.14) 100%
+      );
+      pointer-events: none;
+    }
+    .casio-shell-shadow {
+      box-shadow:
+        0 26px 50px -12px rgba(15, 23, 42, 0.34),
+        0 10px 20px -8px rgba(15, 23, 42, 0.18),
+        inset 0 1px 1px rgba(255, 255, 255, 0.3);
+    }
+    .product-card {
+      transition: transform 0.24s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.24s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+<body class="bg-ivory text-ink font-sans antialiased selection:bg-ocean-700 selection:text-white overflow-x-hidden">
+
+  <!-- ==================== STICKY HEADER ==================== -->
+  <header class="sticky top-0 z-40 bg-ivory/90 backdrop-blur-md border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <!-- Brand Logo -->
+        <a href="#top" class="flex items-center gap-3 group min-w-0">
+          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-br from-ocean-700 via-ocean-600 to-sunset flex items-center justify-center text-white font-black text-sm sm:text-base shadow-md group-hover:scale-105 transition-transform shrink-0">
+            11A12
+          </div>
+          <div class="min-w-0">
+            <div class="flex items-center gap-1.5 font-extrabold text-base sm:text-xl tracking-tight truncate">
+              <span class="text-ocean-700">VinaVietnam</span>
+              <span class="text-sunset">&amp;</span>
+              <span class="text-ink">VinMath</span>
+            </div>
+            <p class="text-[11px] font-semibold text-slate-500 truncate">
+              Tổ 4 • Lớp 11A12 • Quy Nhơn – Bình Định
+            </p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-600">
+          <a href="#story" class="hover:text-ocean-700 transition-colors">Câu chuyện</a>
+          <a href="#live-studio" class="hover:text-ocean-700 transition-colors font-bold text-ocean-700">
+            <i class="fa-solid fa-wand-magic-sparkles mr-1"></i>Phòng Thử 3D
+          </a>
+          <a href="#catalog" class="hover:text-ocean-700 transition-colors">Bộ sưu tập (20)</a>
+          <a href="#custom-order" class="hover:text-ocean-700 transition-colors">Thiết kế riêng</a>
+        </nav>
+
+        <!-- Cart & Mobile Trigger -->
+        <div class="flex items-center gap-2.5 shrink-0">
+          <button
+            type="button"
+            onclick="toggleCartDrawer(true)"
+            class="relative px-3.5 py-2.5 sm:px-4 rounded-2xl bg-white border border-slate-200 hover:border-ocean-700 text-ink hover:text-ocean-700 font-bold text-xs sm:text-sm flex items-center gap-2 shadow-2xs transition-all cursor-pointer"
+          >
+            <i class="fa-solid fa-bag-shopping text-ocean-700 text-base"></i>
+            <span>Giỏ hàng</span>
+            <span id="cart-count-badge" class="px-2 py-0.5 text-xs font-extrabold rounded-full bg-coral-600 text-white">0</span>
+          </button>
+
+          <button
+            type="button"
+            onclick="toggleMobileMenu()"
+            aria-label="Mở menu điều hướng"
+            class="md:hidden p-2.5 rounded-2xl bg-white border border-slate-200 text-ink hover:bg-slate-50 cursor-pointer"
+          >
+            <i class="fa-solid fa-bars text-base"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-nav" class="hidden md:hidden bg-white border-b border-slate-200 px-4 py-3 space-y-1.5 shadow-lg">
+      <a href="#story" onclick="toggleMobileMenu()" class="block px-3.5 py-2.5 rounded-xl text-sm font-semibold text-slate-700 hover:bg-ocean-50">Câu chuyện &amp; Khảo sát</a>
+      <a href="#live-studio" onclick="toggleMobileMenu()" class="block px-3.5 py-2.5 rounded-xl text-sm font-bold text-ocean-700 hover:bg-ocean-50">Phòng Thử Decal 3D Trực Tiếp</a>
+      <a href="#catalog" onclick="toggleMobileMenu()" class="block px-3.5 py-2.5 rounded-xl text-sm font-semibold text-slate-700 hover:bg-ocean-50">Bộ Sưu Tập Sẵn Bán (20 Mẫu)</a>
+      <a href="#custom-order" onclick="toggleMobileMenu()" class="block px-3.5 py-2.5 rounded-xl text-sm font-semibold text-slate-700 hover:bg-ocean-50">Đặt Thiết Kế Độc Bản (55k)</a>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section id="top" class="relative pt-8 pb-14 md:pt-14 md:pb-20 overflow-hidden">
+    <div class="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-ocean-100/70 blur-3xl pointer-events-none"></div>
+    <div class="absolute top-32 -left-24 w-72 h-72 rounded-full bg-orange-100/70 blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <!-- Left Copy -->
+        <div class="lg:col-span-7 space-y-5 text-center lg:text-left">
+          <div class="inline-flex flex-wrap items-center justify-center lg:justify-start gap-2 px-4 py-2 rounded-full bg-white border border-teal-200 shadow-2xs text-xs sm:text-sm font-bold text-ocean-800">
+            <span class="px-2.5 py-0.5 rounded-full bg-coral-600 text-white text-[11px] font-extrabold uppercase tracking-wide">Tổ 4 • 11A12</span>
+            <span>“Nhân chia trước, cộng trừ sau – Chất riêng đi đầu!”</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-5xl lg:text-[52px] font-black text-ink leading-[1.14] tracking-tight">
+            <span class="text-ocean-700">VinaVietnam</span> &amp; <span class="text-ink">VinMath</span> – Thổi hồn cá nhân hóa cho chiếc <span class="text-transparent bg-clip-text bg-gradient-to-r from-ocean-700 to-sunset">Casio</span> của bạn
+          </h1>
+
+          <p class="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            Tạm biệt nỗi lo “cầm nhầm máy tính” hay bàn phím mờ tịt chữ. Chúng mình mang nét vẽ gouache nghệ thuật của xứ biển <strong>Quy Nhơn – Bình Định</strong> và tri thức <strong>Toán – Lý – Hóa – Sinh</strong> lên từng bộ decal vinyl 3 lớp cán màng nhám chống trầy.
+          </p>
+
+          <!-- Survey Price Chips -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2.5 pt-1">
+            <div class="px-3.5 py-2 rounded-2xl bg-white border border-slate-200 text-xs sm:text-sm font-bold text-ink shadow-2xs">
+              Nắp trượt lẻ: <span class="text-ocean-700 font-extrabold">35.000đ – 49.000đ</span>
+            </div>
+            <div class="px-3.5 py-2 rounded-2xl bg-white border border-slate-200 text-xs sm:text-sm font-bold text-ink shadow-2xs">
+              Phím bấm Ombre: <span class="text-sunset font-extrabold">25.000đ</span>
+            </div>
+            <div class="px-3.5 py-2 rounded-2xl bg-gradient-to-r from-ocean-700 to-ocean-600 text-white text-xs sm:text-sm font-extrabold shadow-sm">
+              Combo Full Máy: 55.000đ (Tiết kiệm 15k)
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-2">
+            <a href="#live-studio" class="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-ocean-700 hover:bg-ocean-800 text-white font-bold text-sm shadow-lg shadow-ocean-700/20 flex items-center justify-center gap-2 transition-all">
+              <i class="fa-solid fa-calculator"></i>
+              Thử phối đồ lên máy Casio 3D
+            </a>
+            <a href="#catalog" class="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-white hover:bg-orange-50 text-ink border-2 border-slate-200 hover:border-sunset font-bold text-sm flex items-center justify-center gap-2 transition-all">
+              <i class="fa-solid fa-store text-sunset"></i>
+              Xem 20 mẫu có giá sẵn bán
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Interactive Hero Card -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="w-full max-w-[380px] bg-white rounded-3xl p-5 border border-slate-200/90 shadow-xl animate-float-slow">
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-full bg-coral-50 text-coral-600 text-[11px] font-extrabold uppercase tracking-wider">
+                <i class="fa-solid fa-fire mr-1"></i>Bestseller Quy Nhơn
+              </span>
+              <span class="text-xs font-extrabold text-ocean-700">Combo 55.000đ</span>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3.5 items-center bg-ivory p-3.5 rounded-2xl border border-slate-100">
+              <!-- Back Slide Cover Mockup -->
+              <div class="flex flex-col items-center">
+                <div class="w-[126px] bg-slate-800 rounded-[22px] p-1.5 casio-shell-shadow">
+                  <div class="aspect-[1/2.1] rounded-[17px] overflow-hidden bg-white relative">
+                    <img id="hero-cover-preview" alt="Nắp máy Biển Eo Gió & Tháp Đôi" class="w-full h-full object-cover" />
+                    <div class="absolute inset-0 matte-vinyl-sheen"></div>
+                  </div>
+                </div>
+                <span class="mt-2 text-[11px] font-bold text-slate-600">Nắp lưng Gouache</span>
+              </div>
+
+              <!-- Front Keypad Mockup -->
+              <div class="flex flex-col items-center">
+                <div class="w-[132px] bg-slate-900 rounded-[22px] p-1.5 casio-shell-shadow">
+                  <div class="bg-slate-800 text-[8px] font-mono text-white px-2 py-1 rounded-t-[15px] flex justify-between">
+                    <span class="font-bold">CASIO</span>
+                    <span class="text-teal-300">fx-580VNX</span>
+                  </div>
+                  <div class="bg-[#c9d6c2] text-right font-mono text-[10px] font-black text-slate-900 px-2 py-1 border-y border-slate-700">
+                    11A12 • 10đ
+                  </div>
+                  <div class="aspect-[1/1.28] rounded-b-[15px] overflow-hidden bg-white relative">
+                    <img id="hero-keycap-preview" alt="Bộ dán phím Ombre Xanh Đại Dương" class="w-full h-full object-contain" />
+                    <div class="absolute inset-0 matte-vinyl-sheen"></div>
+                  </div>
+                </div>
+                <span class="mt-2 text-[11px] font-bold text-slate-600">Phím Ombre chống mờ</span>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between gap-2">
+              <div class="min-w-0">
+                <p class="text-xs font-extrabold text-ink truncate">Biển Eo Gió &amp; Tháp Đôi + Phím Xanh</p>
+                <p class="text-[11px] text-slate-500">Cắt bế demi chuẩn từng milimet</p>
+              </div>
+              <button
+                type="button"
+                onclick="addCustomComboToCart('vn-01', 'kc-01', 'fx-580VNX')"
+                class="px-3.5 py-2 rounded-xl bg-coral-600 hover:bg-coral-500 text-white text-xs font-extrabold shrink-0 cursor-pointer transition-colors"
+              >
+                + Mua Combo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== VALUE PROPOSITION & SURVEY HIGHLIGHTS ==================== -->
+  <section id="story" class="py-12 md:py-16 bg-white border-y border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-3xl bg-ivory border border-slate-200/80 space-y-2.5">
+          <div class="w-11 h-11 rounded-2xl bg-ocean-100 text-ocean-700 flex items-center justify-center text-lg">
+            <i class="fa-solid fa-fingerprint"></i>
+          </div>
+          <h2 class="text-lg font-extrabold text-ink">Không còn “cầm nhầm” máy tính</h2>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            85% học sinh được khảo sát có nhu cầu cá nhân hóa Casio. Mỗi chiếc máy mang một thiết kế độc bản giúp nhận diện ngay lập tức trên bàn học.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-3xl bg-ivory border border-slate-200/80 space-y-2.5">
+          <div class="w-11 h-11 rounded-2xl bg-orange-100 text-sunset flex items-center justify-center text-lg">
+            <i class="fa-solid fa-keyboard"></i>
+          </div>
+          <h2 class="text-lg font-extrabold text-ink">Hồi sinh phím bấm bị phai mờ</h2>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Bộ decal phím bấm Ombre cắt bế chuẩn từng nút <code>CALC</code>, <code>∫dx</code>, <code>0–9</code>, cán màng nhám chống mồ hôi tay và trầy xước.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-3xl bg-ivory border border-slate-200/80 space-y-2.5">
+          <div class="w-11 h-11 rounded-2xl bg-coral-100 text-coral-600 flex items-center justify-center text-lg">
+            <i class="fa-solid fa-palette"></i>
+          </div>
+          <h2 class="text-lg font-extrabold text-ink">Chất liệu Vinyl 3 lớp cao cấp</h2>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            In trên decal sữa PVC chịu nước, bóc ra không để lại keo dính trên vỏ máy. Mức giá học sinh siêu dễ tiếp cận chỉ từ <strong>25.000đ – 55.000đ</strong>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== INTERACTIVE LIVE CASIO PREVIEWER ==================== -->
+  <section id="live-studio" class="py-14 md:py-20 bg-ivory">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-xl">
+        <div class="text-center max-w-2xl mx-auto mb-8">
+          <span class="px-3.5 py-1 rounded-full bg-ocean-50 text-ocean-700 text-xs font-extrabold uppercase tracking-wider">
+            Phòng Thử Decal 3D Trực Tiếp
+          </span>
+          <h2 class="text-2xl sm:text-4xl font-black text-ink mt-2">Phối Nắp Trượt &amp; Bàn Phím Casio</h2>
+          <p class="text-sm text-slate-600 mt-1.5">
+            Chuyển đổi linh hoạt giữa mặt trước (bàn phím Ombre) và mặt sau (nắp trượt gouache) trên 3 dòng máy Casio phổ biến nhất.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <!-- Controls Panel -->
+          <div class="lg:col-span-6 space-y-5">
+            <!-- Step 1: Calculator Model -->
+            <div>
+              <label class="block text-xs font-extrabold uppercase tracking-wider text-slate-500 mb-2">
+                1. Chọn dòng máy tính Casio của bạn
+              </label>
+              <div class="grid grid-cols-3 gap-2.5">
+                <button type="button" data-model="fx-580VNX" onclick="setStudioModel('fx-580VNX')" class="studio-model-btn py-2.5 px-3 rounded-2xl border-2 border-ocean-700 bg-ocean-50 text-ocean-800 font-bold text-xs sm:text-sm cursor-pointer">
+                  fx-580VNX
+                </button>
+                <button type="button" data-model="fx-570VN Plus" onclick="setStudioModel('fx-570VN Plus')" class="studio-model-btn py-2.5 px-3 rounded-2xl border-2 border-slate-200 bg-white text-slate-700 font-bold text-xs sm:text-sm cursor-pointer">
+                  fx-570VN Plus
+                </button>
+                <button type="button" data-model="fx-880BTG" onclick="setStudioModel('fx-880BTG')" class="studio-model-btn py-2.5 px-3 rounded-2xl border-2 border-slate-200 bg-white text-slate-700 font-bold text-xs sm:text-sm cursor-pointer">
+                  fx-880BTG
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 2: View Face Toggle -->
+            <div>
+              <label class="block text-xs font-extrabold uppercase tracking-wider text-slate-500 mb-2">
+                2. Góc nhìn mô phỏng trực tiếp
+              </label>
+              <div class="grid grid-cols-3 gap-2">
+                <button type="button" data-view="both" onclick="setStudioView('both')" class="studio-view-btn py-2 px-3 rounded-xl bg-ink text-white font-bold text-xs cursor-pointer">
+                  Song song 2 mặt
+                </button>
+                <button type="button" data-view="back" onclick="setStudioView('back')" class="studio-view-btn py-2 px-3 rounded-xl bg-slate-100 text-slate-700 font-bold text-xs hover:bg-slate-200 cursor-pointer">
+                  Mặt sau (Nắp trượt)
+                </button>
+                <button type="button" data-view="front" onclick="setStudioView('front')" class="studio-view-btn py-2 px-3 rounded-xl bg-slate-100 text-slate-700 font-bold text-xs hover:bg-slate-200 cursor-pointer">
+                  Mặt trước (Bàn phím)
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 3: Choose Slide Cover -->
+            <div>
+              <label class="block text-xs font-extrabold uppercase tracking-wider text-slate-500 mb-2">
+                3. Chọn mẫu decal nắp trượt (14 mẫu)
+              </label>
+              <div id="studio-cover-grid" class="grid grid-cols-2 sm:grid-cols-3 gap-2 max-h-48 overflow-y-auto pr-1">
+                <!-- Populated via JS -->
+              </div>
+            </div>
+
+            <!-- Step 4: Choose Keycap Sticker -->
+            <div>
+              <label class="block text-xs font-extrabold uppercase tracking-wider text-slate-500 mb-2">
+                4. Chọn bộ decal phím bấm Ombre (6 mẫu)
+              </label>
+              <div id="studio-keycap-grid" class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                <!-- Populated via JS -->
+              </div>
+            </div>
+
+            <!-- Action Box -->
+            <div class="p-4 sm:p-5 rounded-2xl bg-ocean-50/80 border border-teal-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div>
+                <span id="studio-summary-model" class="text-xs font-extrabold text-ocean-700">Casio fx-580VNX</span>
+                <p id="studio-summary-title" class="text-sm sm:text-base font-extrabold text-ink mt-0.5">
+                  Biển Eo Gió &amp; Tháp Đôi + Xanh Đại Dương
+                </p>
+                <p class="text-xs text-slate-600 mt-0.5">
+                  Combo Full Máy: <strong class="text-coral-600 text-sm">55.000đ</strong> <span class="line-through text-slate-400">70.000đ</span>
+                </p>
+              </div>
+              <button
+                type="button"
+                onclick="addCustomComboToCart(studioCoverId, studioKeycapId, studioModel)"
+                class="px-5 py-3.5 rounded-2xl bg-coral-600 hover:bg-coral-500 text-white font-extrabold text-xs sm:text-sm shadow-md flex items-center justify-center gap-2 shrink-0 cursor-pointer transition-all"
+              >
+                <i class="fa-solid fa-cart-plus"></i>
+                Thêm Combo (55k)
+              </button>
+            </div>
+          </div>
+
+          <!-- Right 3D Calculator Viewport -->
+          <div class="lg:col-span-6 bg-gradient-to-br from-slate-100 via-ivory to-teal-50/60 rounded-3xl p-6 sm:p-8 border border-slate-200 flex flex-col items-center justify-center min-h-[430px]">
+            <div id="studio-stage" class="flex flex-wrap items-center justify-center gap-6 sm:gap-8 w-full">
+              <!-- Back Slide Cover Device -->
+              <div id="studio-back-device" class="flex flex-col items-center transition-all duration-300">
+                <div class="w-[186px] bg-gradient-to-b from-slate-700 to-slate-900 rounded-[28px] p-2.5 casio-shell-shadow border border-slate-600 relative">
+                  <!-- Top Casio slide notch -->
+                  <div class="w-16 h-2.5 bg-slate-700 mx-auto rounded-t-lg -mt-4 mb-1 border-t border-x border-slate-500"></div>
+                  <div class="w-full aspect-[1/2.12] rounded-[20px] overflow-hidden bg-white relative">
+                    <img id="studio-back-img" alt="Mặt sau nắp trượt Casio" class="w-full h-full object-cover" />
+                    <div class="absolute inset-0 matte-vinyl-sheen"></div>
+                  </div>
+                </div>
+                <span id="studio-back-caption" class="mt-3 px-3 py-1 rounded-full bg-white border border-slate-200 text-xs font-bold text-ink shadow-2xs">
+                  Nắp trượt • 45.000đ
+                </span>
+              </div>
+
+              <!-- Front Keypad Device -->
+              <div id="studio-front-device" class="flex flex-col items-center transition-all duration-300">
+                <div class="w-[196px] bg-gradient-to-b from-slate-800 to-slate-950 rounded-[28px] p-2.5 casio-shell-shadow border border-slate-700">
+                  <!-- Casio Top Bezel & Solar Cell -->
+                  <div class="bg-slate-800 text-white px-2.5 py-1.5 rounded-t-2xl flex items-center justify-between text-[10px] font-mono">
+                    <span class="font-black tracking-wider">CASIO</span>
+                    <span id="studio-front-model-label" class="text-teal-300 font-bold">fx-580VNX</span>
+                  </div>
+                  <!-- LCD Screen -->
+                  <div class="bg-[#c9d6c2] px-2.5 py-2 border-y border-slate-700 font-mono text-slate-900">
+                    <div class="flex justify-between text-[9px] opacity-75">
+                      <span>MATH</span>
+                      <span>D</span>
+                    </div>
+                    <div class="text-right text-xs font-black tracking-tight mt-0.5">
+                      VinaVietnam • 55k
+                    </div>
+                  </div>
+                  <!-- Replay Pad -->
+                  <div class="bg-slate-800 py-1.5 px-3 flex items-center justify-between text-[8px] font-bold text-slate-300">
+                    <span class="px-1.5 py-0.5 rounded bg-slate-700 text-amber-300">SHIFT</span>
+                    <span class="px-1.5 py-0.5 rounded bg-slate-700 text-rose-300">ALPHA</span>
+                    <div class="w-7 h-5 rounded-full bg-slate-600 border border-slate-500 flex items-center justify-center text-[7px]">REPLAY</div>
+                    <span class="px-1.5 py-0.5 rounded bg-slate-700">MENU</span>
+                    <span class="px-1.5 py-0.5 rounded bg-slate-700">ON</span>
+                  </div>
+                  <!-- Applied Ombre Keycap Sticker Sheet -->
+                  <div class="w-full aspect-[1/1.24] rounded-b-2xl overflow-hidden bg-white relative">
+                    <img id="studio-front-img" alt="Bộ phím dán Ombre" class="w-full h-full object-contain" />
+                    <div class="absolute inset-0 matte-vinyl-sheen"></div>
+                  </div>
+                </div>
+                <span class="mt-3 px-3 py-1 rounded-full bg-white border border-orange-200 text-xs font-bold text-sunset shadow-2xs">
+                  Phím Ombre • 25.000đ
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== READY-TO-BUY PRODUCT CATALOG (20 ITEMS) ==================== -->
+  <section id="catalog" class="py-14 md:py-20 bg-white border-t border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Header & Controls -->
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-5 mb-8">
+        <div>
+          <span class="text-xs font-extrabold uppercase tracking-wider text-ocean-700">Cửa Hàng Trực Tuyến • Giá Niêm Yết Sẵn Bán</span>
+          <h2 class="text-2xl sm:text-4xl font-black text-ink mt-1">Bộ Sưu Tập Thiết Kế Độc Bản (20 Mẫu)</h2>
+          <p class="text-sm text-slate-600 mt-1">
+            Toàn bộ hình ảnh được vẽ minh họa sắc nét theo đúng phom máy Casio — chọn mẫu và bấm thêm vào giỏ ngay.
+          </p>
+        </div>
+
+        <!-- Search & Sort -->
+        <div class="flex flex-col sm:flex-row gap-2.5">
+          <div class="relative">
+            <i class="fa-solid fa-magnifying-glass text-slate-400 text-xs absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+            <input
+              id="catalog-search-input"
+              type="text"
+              oninput="renderCatalog()"
+              placeholder="Tìm Quy Nhơn, Toán, Lý, Ombre..."
+              class="w-full sm:w-60 pl-9 pr-3.5 py-2.5 rounded-xl border border-slate-200 bg-ivory text-xs sm:text-sm outline-none focus:border-ocean-700"
+            />
+          </div>
+          <select
+            id="catalog-sort-select"
+            onchange="renderCatalog()"
+            class="px-3.5 py-2.5 rounded-xl border border-slate-200 bg-ivory text-xs sm:text-sm font-semibold text-ink outline-none focus:border-ocean-700 cursor-pointer"
+          >
+            <option value="featured">Sắp xếp: Nổi bật nhất</option>
+            <option value="price-asc">Giá: Thấp đến Cao</option>
+            <option value="price-desc">Giá: Cao đến Thấp</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="flex flex-wrap gap-2 mb-8">
+        <button type="button" data-cat="all" onclick="setCatalogCategory('all')" class="cat-tab-btn px-4 py-2.5 rounded-2xl text-xs sm:text-sm font-bold bg-ink text-white shadow-xs cursor-pointer">
+          Tất cả (20 mẫu)
+        </button>
+        <button type="button" data-cat="vinavietnam" onclick="setCatalogCategory('vinavietnam')" class="cat-tab-btn px-4 py-2.5 rounded-2xl text-xs sm:text-sm font-bold bg-ivory text-slate-700 border border-slate-200 hover:border-ocean-600 cursor-pointer">
+          VinaVietnam — Quy Nhơn &amp; Việt Nam (8)
+        </button>
+        <button type="button" data-cat="vinmath" onclick="setCatalogCategory('vinmath')" class="cat-tab-btn px-4 py-2.5 rounded-2xl text-xs sm:text-sm font-bold bg-ivory text-slate-700 border border-slate-200 hover:border-ocean-600 cursor-pointer">
+          VinMath &amp; Khoa Học (6)
+        </button>
+        <button type="button" data-cat="keycap" onclick="setCatalogCategory('keycap')" class="cat-tab-btn px-4 py-2.5 rounded-2xl text-xs sm:text-sm font-bold bg-ivory text-slate-700 border border-slate-200 hover:border-sunset cursor-pointer">
+          Decal Phím Bấm Ombre (6)
+        </button>
+      </div>
+
+      <!-- Product Grid -->
+      <div id="product-catalog-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+        <!-- Rendered cleanly by JS with crisp Canvas dataURLs -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CUSTOM DESIGN ORDER SECTION (55.000đ) ==================== -->
+  <section id="custom-order" class="py-14 md:py-20 bg-ivory border-t border-slate-200/70">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-gradient-to-br from-ocean-800 via-ocean-700 to-slate-900 rounded-3xl p-6 sm:p-10 text-white shadow-2xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-5 space-y-3">
+            <span class="px-3 py-1 rounded-full bg-white/15 text-teal-200 text-xs font-extrabold uppercase tracking-wider">
+              Dịch Vụ Cá Nhân Hóa
+            </span>
+            <h2 class="text-2xl sm:text-3xl font-black leading-tight">
+              Đặt Thiết Kế Độc Bản Theo Yêu Cầu
+            </h2>
+            <p class="text-sm text-teal-100 leading-relaxed">
+              In tên riêng, lớp (VD: <strong>11A12</strong>), câu châm ngôn yêu thích hoặc ảnh kỷ niệm nhóm lên nắp máy Casio kèm bộ phím Ombre đồng điệu.
+            </p>
+            <div class="pt-2">
+              <span class="inline-block px-4 py-2 rounded-2xl bg-sunset text-white font-black text-sm shadow-md">
+                Trọn gói thiết kế + in ấn: 55.000đ
+              </span>
+            </div>
+          </div>
+
+          <form onsubmit="handleCustomDesignOrder(event)" class="lg:col-span-7 bg-white text-ink rounded-2xl p-5 sm:p-6 space-y-4 shadow-lg">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+              <div>
+                <label class="block text-xs font-bold text-slate-600 mb-1">Chủ đề nền mong muốn</label>
+                <select id="custom-theme-input" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-ivory text-xs sm:text-sm font-semibold outline-none focus:border-ocean-700">
+                  <option value="Biển Quy Nhơn Hoàng Hôn">Biển Quy Nhơn Hoàng Hôn</option>
+                  <option value="Công thức Toán – Lý – Hóa">Công thức Toán – Lý – Hóa</option>
+                  <option value="Cờ Đỏ Sao Vàng Tự Hào">Cờ Đỏ Sao Vàng Tự Hào</option>
+                  <option value="Minimalist Pastel Hàn Quốc">Minimalist Pastel Hàn Quốc</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-600 mb-1">Dòng máy tính Casio</label>
+                <select id="custom-model-input" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-ivory text-xs sm:text-sm font-semibold outline-none focus:border-ocean-700">
+                  <option value="fx-580VNX">Casio fx-580VNX</option>
+                  <option value="fx-570VN Plus">Casio fx-570VN Plus</option>
+                  <option value="fx-880BTG">Casio fx-880BTG</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-600 mb-1">Nội dung chữ / Tên &amp; Lớp in lên decal *</label>
+              <input
+                id="custom-text-input"
+                type="text"
+                required
+                placeholder="VD: Minh Phước – 11A12 • Nhân chia trước, cộng trừ sau"
+                class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-ivory text-xs sm:text-sm outline-none focus:border-ocean-700"
+              />
+            </div>
+
+            <button type="submit" class="w-full py-3.5 rounded-2xl bg-ocean-700 hover:bg-ocean-800 text-white font-extrabold text-sm shadow-md flex items-center justify-center gap-2 cursor-pointer transition-colors">
+              <i class="fa-solid fa-sparkles"></i>
+              Thêm Thiết Kế Riêng Vào Giỏ (55.000đ)
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-ink text-slate-300 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm">
+      <div class="text-center sm:text-left">
+        <strong class="text-white">VinaVietnam &amp; VinMath</strong> — Dự án khởi nghiệp học đường Tổ 4, Lớp 11A12 (Quy Nhơn – Bình Định)
+      </div>
+      <div class="text-slate-400">
+        Nhập mã <strong class="text-teal-300">11A12</strong> khi thanh toán để giảm ngay 10%
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== SLIDE-OVER CART DRAWER ==================== -->
+  <div id="cart-backdrop" onclick="toggleCartDrawer(false)" class="fixed inset-0 z-50 hidden bg-slate-900/50 backdrop-blur-xs"></div>
+  <aside id="cart-drawer" class="fixed top-0 right-0 z-50 h-full w-full max-w-md bg-white shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col">
+    <div class="px-5 py-4 border-b border-slate-200 bg-ivory flex items-center justify-between">
+      <div class="flex items-center gap-2.5">
+        <i class="fa-solid fa-bag-shopping text-ocean-700 text-lg"></i>
+        <h3 class="font-extrabold text-base sm:text-lg text-ink">Giỏ hàng của bạn</h3>
+      </div>
+      <button type="button" onclick="toggleCartDrawer(false)" aria-label="Đóng giỏ hàng" class="w-9 h-9 rounded-xl bg-white border border-slate-200 text-slate-600 hover:text-ink flex items-center justify-center cursor-pointer">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div id="cart-items-container" class="flex-1 overflow-y-auto p-5 space-y-3"></div>
+
+    <div id="cart-footer-box" class="hidden p-5 border-t border-slate-200 bg-ivory space-y-3">
+      <!-- Promo Code Input -->
+      <div class="flex gap-2">
+        <input
+          id="promo-code-input"
+          type="text"
+          placeholder="Nhập mã giảm giá (VD: 11A12)"
+          class="flex-1 px-3 py-2 rounded-xl border border-slate-300 bg-white text-xs font-semibold uppercase outline-none focus:border-ocean-700"
+        />
+        <button
+          type="button"
+          onclick="applyPromoCode()"
+          class="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold cursor-pointer"
+        >
+          Áp dụng
+        </button>
+      </div>
+
+      <div class="space-y-1 text-xs sm:text-sm">
+        <div class="flex justify-between text-slate-600">
+          <span>Tạm tính:</span>
+          <span id="cart-subtotal-text" class="font-bold">0đ</span>
+        </div>
+        <div id="cart-discount-row" class="hidden flex justify-between text-emerald-600 font-bold">
+          <span>Giảm giá mã 11A12 (10%):</span>
+          <span id="cart-discount-text">-0đ</span>
+        </div>
+        <div class="flex justify-between text-slate-600">
+          <span>Giao hàng tại Quy Nhơn / Trường THPT:</span>
+          <span class="font-bold text-ocean-700">Miễn phí (0đ)</span>
+        </div>
+        <div class="flex justify-between text-base font-black text-ink pt-1.5 border-t border-slate-200">
+          <span>Tổng thanh toán:</span>
+          <span id="cart-final-total-text" class="text-coral-600">0đ</span>
+        </div>
+      </div>
+
+      <input id="checkout-name" type="text" placeholder="Họ và tên người nhận *" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs sm:text-sm bg-white outline-none focus:border-ocean-700" />
+      <input id="checkout-contact" type="text" placeholder="Lớp (VD: 11A12) hoặc SĐT / Địa chỉ Quy Nhơn *" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs sm:text-sm bg-white outline-none focus:border-ocean-700" />
+
+      <button type="button" onclick="completeCheckoutOrder()" class="w-full py-3.5 rounded-2xl bg-ocean-700 hover:bg-ocean-800 text-white font-extrabold text-sm shadow-md cursor-pointer transition-colors">
+        Xác nhận đặt hàng ngay
+      </button>
+    </div>
+  </aside>
+
+  <!-- ==================== ORDER RECEIPT MODAL ==================== -->
+  <div id="receipt-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-slate-900/60 backdrop-blur-xs">
+    <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 text-center shadow-2xl border border-teal-200 space-y-4">
+      <div class="w-14 h-14 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl mx-auto">
+        <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <h3 class="text-xl font-black text-ink">Đặt Hàng Thành Công!</h3>
+      <p id="receipt-summary-text" class="text-sm text-slate-600 leading-relaxed"></p>
+      <div id="receipt-code-box" class="py-2.5 px-4 rounded-2xl bg-ocean-50 border border-teal-200 font-mono text-xs font-extrabold text-ocean-800"></div>
+      <button type="button" onclick="closeReceiptModal()" class="w-full py-3 rounded-2xl bg-ink hover:bg-slate-800 text-white font-bold text-sm cursor-pointer">
+        Đóng phiếu xác nhận
+      </button>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast-banner" class="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 px-4 py-2.5 rounded-2xl bg-ink text-white text-xs sm:text-sm font-semibold shadow-xl opacity-0 pointer-events-none transition-all duration-300 flex items-center gap-2">
+    <i class="fa-solid fa-circle-check text-teal-400"></i>
+    <span id="toast-message">Đã thêm sản phẩm</span>
+  </div>
+
+  <script>
+    // =========================================================================
+    // 1. COMPLETE PRODUCT CATALOG DATA (20 READY-TO-BUY ITEMS)
+    // =========================================================================
+    const PRODUCTS = [
+      // --- 8 VINAVIETNAM SLIDE COVERS ---
+      {
+        id: 'vn-01',
+        type: 'cover',
+        category: 'vinavietnam',
+        categoryLabel: 'VinaVietnam',
+        name: 'Biển Eo Gió & Tháp Đôi Hoàng Hôn',
+        price: 45000,
+        badge: 'Bestseller',
+        desc: 'Tranh màu gouache hoàng hôn hồng cam, sóng biển ngọc bích, Tháp Đôi và thuyền thúng Quy Nhơn.',
+        artKey: 'eo_gio_sunset',
+      },
+      {
+        id: 'vn-02',
+        type: 'cover',
+        category: 'vinavietnam',
+        categoryLabel: 'VinaVietnam',
+        name: 'Tháp Bánh Ít Cổ Kính',
+        price: 45000,
+        badge: 'Di sản',
+        desc: 'Kiến trúc tháp Chăm gạch đỏ uy nghiêm trên đồi xanh, dòng sông uốn lượn “Quy Nhơn - Bình Định”.',
+        artKey: 'thap_banh_it',
+      },
+      {
+        id: 'vn-03',
+        type: 'cover',
+        category: 'vinavietnam',
+        categoryLabel: 'VinaVietnam',
+        name: 'Tượng Đài Nguyễn Sinh Sắc - Nguyễn Tất Thành',
+        price: 49000,
+        badge: 'Biểu tượng',
+        desc: 'Quảng trường trung tâm Quy Nhơn với bức phù điêu lịch sử và hướng nhìn ra biển Đông.',
+        artKey: 'tuong_dai_qn',
+      },
+      {
+        id: 'vn-04',
+        type: 'cover',
+        category: 'vinavietnam',
+        categoryLabel: 'VinaVietnam',
+        name: 'Bãi Biển Quy Nhơn Nắng Vàng',
+        price: 45000,
+        badge: 'Mùa hè',
+        desc: 'Bầu trời xanh trong, hàng dừa nghiêng bóng, hải đăng xa xa và làn nước trong vắt.',
+        artKey: 'bai_bien_nang',
+      },
+      {
+        id: 'vn-05',
+        type: 'cover',
+        category: 'vinavietnam',
+        categoryLabel: 'VinaVietnam',
+        name: 'Đặc Sản Bánh Ít Lá Gai Quy Nhơn',
+        price: 42000,
+        badge: 'Đặc sản',
+        desc: 'Bánh ít gói lá chuối hình tháp trên mẹt tre và chiếc bánh bóc đôi nhân đậu xanh dẻo thơm.',
+        artKey: 'banh_it_la_gai',
+      },
+      {
+        id: 'vn-06',
+        type: 'cover',
+        category: 'vinavietnam',
+        categoryLabel: 'VinaVietnam',
+        name: 'Đêm Thành Phố Biển Quy Nhơn',
+        price: 49000,
+        badge: 'Cực phẩm',
+        desc: 'Góc nhìn toàn cảnh vịnh Quy Nhơn cong vầng trăng khuyết lung linh ánh đèn và cầu Thị Nại.',
+        artKey: 'dem_quy_nhon',
+      },
+      {
+        id: 'vn-07',
+        type: 'cover',
+        category: 'vinavietnam',
+        categoryLabel: 'VinaVietnam',
+        name: 'Mâm Ẩm Thực Truyền Thống Bình Định',
+        price: 45000,
+        badge: 'Xứ Nẫu',
+        desc: 'Bánh xèo tôm nhảy, bún chả cá, nem chua chợ Huyện và bánh ít lá gai trên nền lá chuối xanh.',
+        artKey: 'am_thuc_bd',
+      },
+      {
+        id: 'vn-08',
+        type: 'cover',
+        category: 'vinavietnam',
+        categoryLabel: 'VinaVietnam',
+        name: 'Việt Nam – Độc Lập Tự Do Hạnh Phúc',
+        price: 49000,
+        badge: 'Tự hào',
+        desc: 'Tông đỏ sao vàng rực rỡ tôn vinh tinh thần yêu nước và khí thế tuổi trẻ Việt Nam.',
+        artKey: 'vietnam_patriotic',
+      },
+
+      // --- 6 VINMATH & KHOA HỌC TỰ NHIÊN SLIDE COVERS ---
+      {
+        id: 'vm-01',
+        type: 'cover',
+        category: 'vinmath',
+        categoryLabel: 'VinMath',
+        name: 'Toán Học & Tỷ Lệ Vàng Cổ Điển',
+        price: 39000,
+        badge: 'Dân Toán',
+        desc: 'Mảng màu navy, xanh rêu, đất nung & kem cùng parabol, xoắn ốc tỷ lệ vàng, tích phân và khối 3D.',
+        artKey: 'math_classic',
+      },
+      {
+        id: 'vm-02',
+        type: 'cover',
+        category: 'vinmath',
+        categoryLabel: 'VinMath',
+        name: 'Vật Lý Lượng Tử & Quang Phổ',
+        price: 39000,
+        badge: 'Dân Lý',
+        desc: 'Nền kem gouache thanh lịch với lăng kính tán sắc cầu vồng, mô hình nguyên tử, E=mc² và F=ma.',
+        artKey: 'physics_prism',
+      },
+      {
+        id: 'vm-03',
+        type: 'cover',
+        category: 'vinmath',
+        categoryLabel: 'VinMath',
+        name: 'Hóa Học & Bảng Tuần Hoàn',
+        price: 42000,
+        badge: 'Dân Hóa',
+        desc: 'Bình tam giác thí nghiệm, chuỗi ADN, vòng benzen, H2O, H2SO4 và phương trình khí lý tưởng PV=nRT.',
+        artKey: 'chemistry_lab',
+      },
+      {
+        id: 'vm-04',
+        type: 'cover',
+        category: 'vinmath',
+        categoryLabel: 'VinMath',
+        name: 'Toán & Vật Lý Pastel Nghệ Thuật',
+        price: 45000,
+        badge: 'Trendy',
+        desc: 'Sóng màu pastel xanh bơ, san hô, xanh trời và vàng bơ kết hợp công thức Toán học & Vật lý.',
+        artKey: 'math_physics_pastel',
+      },
+      {
+        id: 'vm-05',
+        type: 'cover',
+        category: 'vinmath',
+        categoryLabel: 'VinMath',
+        name: 'Sinh Học & Y Học Đời Sống',
+        price: 45000,
+        badge: 'Khối B',
+        desc: 'Minh họa bác sĩ nghiên cứu, tim, phổi, não bộ, kính hiển vi và chuỗi xoắn kép ADN.',
+        artKey: 'biology_med',
+      },
+      {
+        id: 'vm-06',
+        type: 'cover',
+        category: 'vinmath',
+        categoryLabel: 'VinMath',
+        name: 'Tối Giản – Độc Lập Tự Do Hạnh Phúc',
+        price: 35000,
+        badge: 'Giá tốt',
+        desc: 'Nền kem nhám tối giản điểm xuyết lá cờ đỏ sao vàng và nét thư pháp ấm áp.',
+        artKey: 'minimal_flag',
+      },
+
+      // --- 6 OMBRE KEYCAP STICKER SETS ---
+      {
+        id: 'kc-01',
+        type: 'keycap',
+        category: 'keycap',
+        categoryLabel: 'Phím Ombre',
+        name: 'Phím Ombre Xanh Đại Dương (Ocean Blue)',
+        price: 25000,
+        badge: 'Chống mờ',
+        desc: 'Bộ decal dán full 44 phím Casio sắc xanh biển chuyển sắc dịu mắt, rõ nét từng ký hiệu.',
+        palette: ['#1E3A8A', '#1D4ED8', '#2563EB', '#3B82F6', '#60A5FA', '#93C5FD'],
+      },
+      {
+        id: 'kc-02',
+        type: 'keycap',
+        category: 'keycap',
+        categoryLabel: 'Phím Ombre',
+        name: 'Phím Ombre Xanh Bơ Matcha (Sage Green)',
+        price: 25000,
+        badge: 'Dịu mắt',
+        desc: 'Tông xanh bơ matcha thanh mát, chống mồ hôi tay và đồng bộ với các mẫu nắp thiên nhiên.',
+        palette: ['#14532D', '#166534', '#3F6212', '#4D7C0F', '#65A30D', '#84CC16'],
+      },
+      {
+        id: 'kc-03',
+        type: 'keycap',
+        category: 'keycap',
+        categoryLabel: 'Phím Ombre',
+        name: 'Phím Ombre Đỏ Rượu Vang (Burgundy Red)',
+        price: 25000,
+        badge: 'Nổi bật',
+        desc: 'Sắc đỏ rượu vang sang trọng, tạo điểm nhấn cá tính mạnh mẽ cho bàn phím máy tính.',
+        palette: ['#4C0519', '#881337', '#9F1239', '#BE123C', '#E11D48', '#FB7185'],
+      },
+      {
+        id: 'kc-04',
+        type: 'keycap',
+        category: 'keycap',
+        categoryLabel: 'Phím Ombre',
+        name: 'Phím Ombre Xanh Cổ Vịt (Deep Teal)',
+        price: 25000,
+        badge: 'Bestseller',
+        desc: 'Gam xanh cổ vịt đặc trưng của biển Quy Nhơn, phối hợp ăn ý với cả VinaVietnam & VinMath.',
+        palette: ['#134E4A', '#115E59', '#0F766E', '#0D9488', '#14B8A6', '#5EEAD4'],
+      },
+      {
+        id: 'kc-05',
+        type: 'keycap',
+        category: 'keycap',
+        categoryLabel: 'Phím Ombre',
+        name: 'Phím Ombre Nâu Cà Phê (Espresso Brown)',
+        price: 25000,
+        badge: 'Vintage',
+        desc: 'Tông nâu cà phê ấm áp chuẩn gu vintage, hạn chế bám bẩn khi sử dụng tần suất cao.',
+        palette: ['#291810', '#451A03', '#78350F', '#92400E', '#B45309', '#D97706'],
+      },
+      {
+        id: 'kc-06',
+        type: 'keycap',
+        category: 'keycap',
+        categoryLabel: 'Phím Ombre',
+        name: 'Phím Ombre Cam Đất Hoàng Hôn (Terracotta)',
+        price: 25000,
+        badge: 'Năng động',
+        desc: 'Sắc cam đất hoàng hôn rực rỡ, mang lại nguồn năng lượng tích cực mỗi giờ giải toán.',
+        palette: ['#7C2D12', '#9A3412', '#C2410C', '#EA580C', '#F97316', '#FDBA74'],
+      },
+    ];
+
+    // =========================================================================
+    // 2. PROCEDURAL HIGH-RES GOUACHE & CASIO KEYCAP ART GENERATOR
+    //    Guarantees 100% crisp images with ZERO external network/file errors!
+    // =========================================================================
+    const renderedArtCache = {};
+
+    function applyGouacheBrushTexture(ctx, w, h, seed = 1) {
+      ctx.save();
+      for (let i = 0; i < 420; i++) {
+        const rx = ((i * 73 + seed * 31) % 1000) / 1000 * w;
+        const ry = ((i * 137 + seed * 17) % 1000) / 1000 * h;
+        const rw = 16 + (i % 28);
+        const rh = 4 + (i % 7);
+        ctx.fillStyle = i % 2 === 0 ? 'rgba(255,255,255,0.06)' : 'rgba(15,23,42,0.035)';
+        ctx.beginPath();
+        ctx.ellipse(rx, ry, rw, rh, ((i % 9) - 4) * 0.08, 0, Math.PI * 2);
+        ctx.fill();
+      }
+      ctx.restore();
+    }
+
+    function drawCalligraphyFooter(ctx, w, h, text, textColor = '#FFFDF7', bgOverlay = 'rgba(15,23,42,0.28)') {
+      ctx.save();
+      const grad = ctx.createLinearGradient(0, h - 68, 0, h);
+      grad.addColorStop(0, 'rgba(0,0,0,0)');
+      grad.addColorStop(1, bgOverlay);
+      ctx.fillStyle = grad;
+      ctx.fillRect(0, h - 68, w, 68);
+
+      ctx.font = 'italic 700 21px "Playfair Display", Georgia, serif';
+      ctx.fillStyle = textColor;
+      ctx.textAlign = 'center';
+      ctx.shadowColor = 'rgba(0,0,0,0.45)';
+      ctx.shadowBlur = 6;
+      ctx.fillText(text, w / 2, h - 22);
+      ctx.restore();
+    }
+
+    function generateCoverDataUrl(product) {
+      if (renderedArtCache[product.id]) return renderedArtCache[product.id];
+
+      const w = 320;
+      const h = 680;
+      const canvas = document.createElement('canvas');
+      canvas.width = w;
+      canvas.height = h;
+      const ctx = canvas.getContext('2d');
+
+      const key = product.artKey;
+
+      if (key === 'eo_gio_sunset') {
+        // Sunset pink-peach sky
+        const sky = ctx.createLinearGradient(0, 0, 0, h * 0.48);
+        sky.addColorStop(0, '#F4A29E');
+        sky.addColorStop(0.55, '#F9C59F');
+        sky.addColorStop(1, '#FDE6B8');
+        ctx.fillStyle = sky;
+        ctx.fillRect(0, 0, w, h * 0.48);
+
+        // Gouache clouds
+        ctx.fillStyle = 'rgba(235, 118, 114, 0.45)';
+        for (let i = 0; i < 14; i++) {
+          ctx.beginPath();
+          ctx.ellipse((i * 53) % w, 35 + i * 16, 65, 12, 0, 0, Math.PI * 2);
+          ctx.fill();
+        }
+
+        // Sea
+        const sea = ctx.createLinearGradient(0, h * 0.44, 0, h * 0.9);
+        sea.addColorStop(0, '#1D6FA5');
+        sea.addColorStop(0.5, '#17A2B8');
+        sea.addColorStop(1, '#4FD1C5');
+        ctx.fillStyle = sea;
+        ctx.fillRect(0, h * 0.44, w, h * 0.56);
+
+        // Golden beach curve
+        ctx.fillStyle = '#F3D08A';
+        ctx.beginPath();
+        ctx.moveTo(w * 0.15, h);
+        ctx.quadraticCurveTo(w * 0.85, h * 0.78, w * 0.72, h * 0.65);
+        ctx.lineTo(w, h * 0.65);
+        ctx.lineTo(w, h);
+        ctx.closePath();
+        ctx.fill();
+
+        // White foam wave
+        ctx.strokeStyle = 'rgba(255,255,255,0.85)';
+        ctx.lineWidth = 5;
+        ctx.beginPath();
+        ctx.moveTo(w * 0.12, h * 0.94);
+        ctx.quadraticCurveTo(w * 0.78, h * 0.77, w * 0.68, h * 0.66);
+        ctx.stroke();
+
+        // Green rocky cliff & Twin Cham Towers
+        ctx.fillStyle = '#3B6E52';
+        ctx.beginPath();
+        ctx.moveTo(w * 0.42, h * 0.47);
+        ctx.lineTo(w, h * 0.36);
+        ctx.lineTo(w, h * 0.72);
+        ctx.lineTo(w * 0.62, h * 0.62);
+        ctx.closePath();
+        ctx.fill();
+
+        // Twin Cham Towers silhouette
+        ctx.fillStyle = '#8B4A32';
+        ctx.fillRect(w * 0.65, h * 0.31, 24, 48);
+        ctx.fillRect(w * 0.75, h * 0.29, 26, 52);
+        ctx.fillStyle = '#6D3522';
+        ctx.beginPath();
+        ctx.moveTo(w * 0.64, h * 0.31);
+        ctx.lineTo(w * 0.65 + 12, h * 0.26);
+        ctx.lineTo(w * 0.65 + 25, h * 0.31);
+        ctx.fill();
+        ctx.beginPath();
+        ctx.moveTo(w * 0.74, h * 0.29);
+        ctx.lineTo(w * 0.75 + 13, h * 0.24);
+        ctx.lineTo(w * 0.75 + 27, h * 0.29);
+        ctx.fill();
+
+        // Basket boats on sand
+        ctx.fillStyle = '#1E3A5F';
+        ctx.beginPath();
+        ctx.ellipse(w * 0.56, h * 0.88, 22, 10, 0, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = '#7C4A2D';
+        ctx.beginPath();
+        ctx.ellipse(w * 0.74, h * 0.85, 16, 8, 0, 0, Math.PI * 2);
+        ctx.fill();
+
+        applyGouacheBrushTexture(ctx, w, h, 1);
+        drawCalligraphyFooter(ctx, w, h, 'Quy Nhơn', '#FFFFFF');
+
+      } else if (key === 'thap_banh_it') {
+        // Pastel sky
+        const sky = ctx.createLinearGradient(0, 0, 0, h * 0.42);
+        sky.addColorStop(0, '#93C5FD');
+        sky.addColorStop(0.7, '#FDE2E4');
+        sky.addColorStop(1, '#FEF3C7');
+        ctx.fillStyle = sky;
+        ctx.fillRect(0, 0, w, h * 0.45);
+
+        // Distant blue mountains
+        ctx.fillStyle = '#6488A8';
+        ctx.beginPath();
+        ctx.moveTo(0, h * 0.42);
+        ctx.lineTo(w * 0.35, h * 0.34);
+        ctx.lineTo(w * 0.75, h * 0.39);
+        ctx.lineTo(w, h * 0.35);
+        ctx.lineTo(w, h * 0.55);
+        ctx.lineTo(0, h * 0.55);
+        ctx.fill();
+
+        // Lush green valley & winding river
+        ctx.fillStyle = '#84A955';
+        ctx.fillRect(0, h * 0.44, w, h * 0.56);
+        ctx.strokeStyle = '#BAE6FD';
+        ctx.lineWidth = 14;
+        ctx.beginPath();
+        ctx.moveTo(0, h * 0.56);
+        ctx.bezierCurveTo(w * 0.3, h * 0.52, w * 0.15, h * 0.47, w * 0.45, h * 0.46);
+        ctx.stroke();
+
+        // Red-earth hill foreground
+        ctx.fillStyle = '#A84A2C';
+        ctx.beginPath();
+        ctx.moveTo(0, h * 0.65);
+        ctx.quadraticCurveTo(w * 0.55, h * 0.48, w, h * 0.62);
+        ctx.lineTo(w, h);
+        ctx.lineTo(0, h);
+        ctx.fill();
+
+        // Winding dirt trail
+        ctx.strokeStyle = '#E5B89B';
+        ctx.lineWidth = 12;
+        ctx.beginPath();
+        ctx.moveTo(w * 0.35, h * 0.92);
+        ctx.quadraticCurveTo(w * 0.65, h * 0.75, w * 0.48, h * 0.58);
+        ctx.stroke();
+
+        // Thap Banh It red brick tower
+        ctx.fillStyle = '#B84A27';
+        ctx.fillRect(w * 0.48, h * 0.36, 62, 110);
+        ctx.fillRect(w * 0.53, h * 0.30, 52, 65);
+        ctx.fillRect(w * 0.58, h * 0.25, 42, 50);
+        ctx.fillStyle = '#7C2D12';
+        ctx.fillRect(w * 0.54, h * 0.45, 18, 36);
+
+        // Foliage clusters
+        ctx.fillStyle = '#2D5A27';
+        for (let i = 0; i < 12; i++) {
+          ctx.beginPath();
+          ctx.arc((i * 37) % w, h * 0.58 + (i % 5) * 48, 28, 0, Math.PI * 2);
+          ctx.fill();
+        }
+
+        applyGouacheBrushTexture(ctx, w, h, 2);
+        drawCalligraphyFooter(ctx, w, h, 'Quy Nhơn - Bình Định', '#FFFFFF');
+
+      } else if (key === 'tuong_dai_qn') {
+        // Sky
+        const sky = ctx.createLinearGradient(0, 0, 0, h * 0.44);
+        sky.addColorStop(0, '#93C5FD');
+        sky.addColorStop(0.65, '#FCE7F3');
+        sky.addColorStop(1, '#FED7AA');
+        ctx.fillStyle = sky;
+        ctx.fillRect(0, 0, w, h * 0.46);
+
+        // Sea peek on left
+        ctx.fillStyle = '#38BDF8';
+        ctx.fillRect(0, h * 0.44, w * 0.3, h * 0.12);
+
+        // Bas-relief stone arc wall
+        ctx.fillStyle = '#94A3B8';
+        ctx.beginPath();
+        ctx.moveTo(w * 0.12, h * 0.43);
+        ctx.quadraticCurveTo(w * 0.55, h * 0.48, w * 0.92, h * 0.36);
+        ctx.lineTo(w * 0.92, h * 0.58);
+        ctx.lineTo(w * 0.16, h * 0.58);
+        ctx.closePath();
+        ctx.fill();
+
+        // Plaza tiles
+        ctx.fillStyle = '#CBD5E1';
+        ctx.fillRect(0, h * 0.58, w, h * 0.42);
+        ctx.fillStyle = '#D97757';
+        ctx.beginPath();
+        ctx.moveTo(w * 0.15, h * 0.65);
+        ctx.lineTo(w * 0.88, h * 0.62);
+        ctx.lineTo(w * 0.96, h * 0.72);
+        ctx.lineTo(w * 0.08, h * 0.72);
+        ctx.fill();
+
+        // Pedestal & Bronze statues
+        ctx.fillStyle = '#9A3412';
+        ctx.fillRect(w * 0.42, h * 0.52, 68, 56);
+        ctx.fillStyle = '#78350F';
+        // Statue 1 (Nguyen Tat Thanh)
+        ctx.fillRect(w * 0.46, h * 0.35, 22, 115);
+        ctx.beginPath();
+        ctx.arc(w * 0.46 + 11, h * 0.33, 10, 0, Math.PI * 2);
+        ctx.fill();
+        // Statue 2 (Nguyen Sinh Sac)
+        ctx.fillRect(w * 0.55, h * 0.36, 22, 112);
+        ctx.beginPath();
+        ctx.arc(w * 0.55 + 11, h * 0.34, 10, 0, Math.PI * 2);
+        ctx.fill();
+
+        applyGouacheBrushTexture(ctx, w, h, 3);
+        drawCalligraphyFooter(ctx, w, h, 'Quy Nhơn - Bình Định', '#FFFFFF');
+
+      } else if (key === 'bai_bien_nang') {
+        // Sunny azure sky
+        const sky = ctx.createLinearGradient(0, 0, 0, h * 0.42);
+        sky.addColorStop(0, '#38BDF8');
+        sky.addColorStop(0.75, '#BAE6FD');
+        sky.addColorStop(1, '#FDE68A');
+        ctx.fillStyle = sky;
+        ctx.fillRect(0, 0, w, h * 0.44);
+
+        // Turquoise ocean
+        const sea = ctx.createLinearGradient(0, h * 0.4, 0, h * 0.85);
+        sea.addColorStop(0, '#0284C7');
+        sea.addColorStop(0.5, '#06B6D4');
+        sea.addColorStop(1, '#2DD4BF');
+        ctx.fillStyle = sea;
+        ctx.fillRect(0, h * 0.4, w, h * 0.6);
+
+        // Headland + lighthouse
+        ctx.fillStyle = '#3F6212';
+        ctx.beginPath();
+        ctx.moveTo(0, h * 0.36);
+        ctx.quadraticCurveTo(w * 0.45, h * 0.39, w * 0.65, h * 0.47);
+        ctx.lineTo(0, h * 0.56);
+        ctx.fill();
+        ctx.fillStyle = '#FFFFFF';
+        ctx.fillRect(w * 0.24, h * 0.31, 8, 28);
+
+        // Golden beach on bottom-left
+        ctx.fillStyle = '#FCD34D';
+        ctx.beginPath();
+        ctx.moveTo(0, h * 0.55);
+        ctx.quadraticCurveTo(w * 0.32, h * 0.76, w * 0.92, h * 0.92);
+        ctx.lineTo(w, h);
+        ctx.lineTo(0, h);
+        ctx.fill();
+
+        // Palm trees
+        ctx.strokeStyle = '#422006';
+        ctx.lineWidth = 6;
+        ctx.beginPath();
+        ctx.moveTo(28, h * 0.86);
+        ctx.quadraticCurveTo(42, h * 0.72, 68, h * 0.64);
+        ctx.stroke();
+        ctx.fillStyle = '#15803D';
+        for (let a = 0; a < 6; a++) {
+          ctx.beginPath();
+          ctx.ellipse(68 + Math.cos(a) * 24, h * 0.64 + Math.sin(a) * 14, 24, 6, a, 0, Math.PI * 2);
+          ctx.fill();
+        }
+
+        // Basket boats
+        ctx.fillStyle = '#1E3A8A';
+        ctx.beginPath();
+        ctx.ellipse(w * 0.44, h * 0.86, 22, 10, 0, 0, Math.PI * 2);
+        ctx.fill();
+
+        applyGouacheBrushTexture(ctx, w, h, 4);
+        drawCalligraphyFooter(ctx, w, h, 'Quy Nhơn', '#FFFFFF');
+
+      } else if (key === 'banh_it_la_gai') {
+        // Banana leaf green background
+        ctx.fillStyle = '#4D7C0F';
+        ctx.fillRect(0, 0, w, h);
+        ctx.fillStyle = '#65A30D';
+        ctx.beginPath();
+        ctx.ellipse(w * 0.5, h * 0.5, w * 0.75, h * 0.38, -0.3, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Bamboo tray
+        ctx.fillStyle = '#E6C280';
+        ctx.strokeStyle = '#92400E';
+        ctx.lineWidth = 4;
+        ctx.save();
+        ctx.translate(w * 0.52, h * 0.62);
+        ctx.rotate(-0.18);
+        ctx.fillRect(-95, -55, 190, 110);
+        ctx.strokeRect(-95, -55, 190, 110);
+        ctx.restore();
+
+        // Green pyramid Banh It cakes
+        const pyramids = [
+          { x: w * 0.55, y: h * 0.16, s: 58 },
+          { x: w * 0.24, y: h * 0.34, s: 54 },
+          { x: w * 0.8, y: h * 0.34, s: 54 },
+          { x: w * 0.34, y: h * 0.52, s: 56 },
+        ];
+        pyramids.forEach((p) => {
+          ctx.fillStyle = '#15803D';
+          ctx.beginPath();
+          ctx.moveTo(p.x, p.y - p.s);
+          ctx.lineTo(p.x - p.s * 0.9, p.y + p.s * 0.55);
+          ctx.lineTo(p.x + p.s * 0.9, p.y + p.s * 0.55);
+          ctx.closePath();
+          ctx.fill();
+          ctx.fillStyle = '#FEF08A';
+          ctx.beginPath();
+          ctx.ellipse(p.x, p.y + 8, p.s * 0.48, 15, 0, 0, Math.PI * 2);
+          ctx.fill();
+        });
+
+        // Peeled black sticky rice cake with mung bean filling
+        ctx.fillStyle = '#111827';
+        ctx.beginPath();
+        ctx.ellipse(w * 0.48, h * 0.62, 34, 24, -0.2, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.beginPath();
+        ctx.ellipse(w * 0.68, h * 0.62, 34, 24, 0.2, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = '#FACC15';
+        ctx.beginPath();
+        ctx.arc(w * 0.53, h * 0.62, 14, 0, Math.PI * 2);
+        ctx.arc(w * 0.63, h * 0.62, 14, 0, Math.PI * 2);
+        ctx.fill();
+
+        applyGouacheBrushTexture(ctx, w, h, 5);
+        drawCalligraphyFooter(ctx, w, h, 'Bánh ít lá gai - Quy Nhơn', '#FFFFFF', 'rgba(41,24,16,0.75)');
+
+      } else if (key === 'dem_quy_nhon') {
+        // Deep night sky
+        const night = ctx.createLinearGradient(0, 0, 0, h);
+        night.addColorStop(0, '#0B132B');
+        night.addColorStop(0.5, '#1C2541');
+        night.addColorStop(1, '#0F172A');
+        ctx.fillStyle = night;
+        ctx.fillRect(0, 0, w, h);
+
+        // Stars & Crescent Moon
+        ctx.fillStyle = '#FEF9C3';
+        ctx.beginPath();
+        ctx.arc(w * 0.72, h * 0.14, 16, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = '#0B132B';
+        ctx.beginPath();
+        ctx.arc(w * 0.69, h * 0.13, 14, 0, Math.PI * 2);
+        ctx.fill();
+
+        for (let s = 0; s < 35; s++) {
+          ctx.fillStyle = 'rgba(255,255,255,0.75)';
+          ctx.fillRect((s * 89) % w, (s * 43) % (h * 0.35), 2, 2);
+        }
+
+        // Crescent bay & golden coastal highway lights
+        ctx.strokeStyle = '#FBBF24';
+        ctx.lineWidth = 10;
+        ctx.beginPath();
+        ctx.moveTo(w * 0.45, h * 0.92);
+        ctx.bezierCurveTo(w * 0.1, h * 0.65, w * 0.25, h * 0.44, w * 0.65, h * 0.36);
+        ctx.stroke();
+
+        // City building lights
+        for (let b = 0; b < 45; b++) {
+          ctx.fillStyle = b % 2 === 0 ? '#FDE047' : '#FB923C';
+          ctx.fillRect(18 + (b * 23) % (w * 0.38), h * 0.42 + (b * 11) % (h * 0.45), 6, 4);
+        }
+
+        // Thi Nai Bridge lights
+        ctx.strokeStyle = '#38BDF8';
+        ctx.lineWidth = 3;
+        ctx.beginPath();
+        ctx.moveTo(w * 0.65, h * 0.33);
+        ctx.lineTo(w * 0.95, h * 0.32);
+        ctx.stroke();
+
+        applyGouacheBrushTexture(ctx, w, h, 6);
+        drawCalligraphyFooter(ctx, w, h, 'Thành phố biển - Quy Nhơn', '#FEF08A', 'rgba(2,6,23,0.85)');
+
+      } else if (key === 'am_thuc_bd') {
+        // Warm banana leaf & wood platter
+        ctx.fillStyle = '#3F6212';
+        ctx.fillRect(0, 0, w, h);
+
+        // Top: Banh it la gai
+        ctx.fillStyle = '#166534';
+        ctx.beginPath();
+        ctx.moveTo(w * 0.25, h * 0.08);
+        ctx.lineTo(w * 0.1, h * 0.24);
+        ctx.lineTo(w * 0.4, h * 0.24);
+        ctx.fill();
+
+        // Middle-right: Bowl of Bun Cha Ca
+        ctx.fillStyle = '#F8FAFC';
+        ctx.beginPath();
+        ctx.arc(w * 0.72, h * 0.32, 54, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = '#F59E0B';
+        ctx.beginPath();
+        ctx.arc(w * 0.72, h * 0.32, 44, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Middle-left: Nem chua rolls
+        ctx.fillStyle = '#F43F5E';
+        for (let r = 0; r < 5; r++) {
+          ctx.beginPath();
+          ctx.ellipse(w * 0.34, h * 0.42 + r * 14, 32, 8, -0.15, 0, Math.PI * 2);
+          ctx.fill();
+        }
+
+        // Bottom: Golden Banh Xeo Tom Nhay
+        ctx.fillStyle = '#FACC15';
+        ctx.beginPath();
+        ctx.ellipse(w * 0.5, h * 0.72, 108, 56, 0.08, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = '#EA580C';
+        for (let sh = 0; sh < 5; sh++) {
+          ctx.beginPath();
+          ctx.arc(w * 0.32 + sh * 28, h * 0.71, 10, 0, Math.PI * 2);
+          ctx.fill();
+        }
+
+        applyGouacheBrushTexture(ctx, w, h, 7);
+        drawCalligraphyFooter(ctx, w, h, 'Món ngon truyền thống - Bình Định', '#FFFFFF', 'rgba(41,24,16,0.82)');
+
+      } else if (key === 'vietnam_patriotic') {
+        // Patriotic Red & Cream Gouache
+        ctx.fillStyle = '#B91C1C';
+        ctx.fillRect(0, 0, w, h * 0.56);
+        ctx.fillStyle = '#E7D8C9';
+        ctx.fillRect(0, h * 0.54, w, h * 0.46);
+
+        // Gold Star
+        ctx.fillStyle = '#FACC15';
+        ctx.beginPath();
+        const cx = w * 0.68, cy = h * 0.14, spikes = 5, outerR = 36, innerR = 15;
+        for (let i = 0; i < spikes * 2; i++) {
+          const r = i % 2 === 0 ? outerR : innerR;
+          const angle = (i * Math.PI) / spikes - Math.PI / 2;
+          ctx.lineTo(cx + Math.cos(angle) * r, cy + Math.sin(angle) * r);
+        }
+        ctx.closePath();
+        ctx.fill();
+
+        // Bold Vietnamese typography
+        ctx.fillStyle = '#FFFBEB';
+        ctx.font = 'italic 900 42px "Playfair Display", serif';
+        ctx.textAlign = 'center';
+        ctx.fillText('Vietnam', w * 0.46, h * 0.28);
+
+        ctx.font = '900 28px Inter, sans-serif';
+        ctx.fillStyle = '#FEF08A';
+        ctx.fillText('ĐỘC LẬP', w * 0.64, h * 0.37);
+
+        ctx.fillStyle = '#991B1B';
+        ctx.font = '900 32px Inter, sans-serif';
+        ctx.fillText('TỰ DO', w * 0.48, h * 0.86);
+
+        applyGouacheBrushTexture(ctx, w, h, 8);
+        drawCalligraphyFooter(ctx, w, h, 'Độc Lập - Tự Do - Hạnh Phúc', '#FFFBEB', 'rgba(127,29,29,0.75)');
+
+      } else if (key === 'math_classic') {
+        // Navy, Sage, Cream & Terracotta color-block gouache
+        ctx.fillStyle = '#F5EFE6';
+        ctx.fillRect(0, 0, w, h);
+
+        ctx.fillStyle = '#1B3B5A';
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        ctx.lineTo(w * 0.6, 0);
+        ctx.quadraticCurveTo(w * 0.45, h * 0.26, 0, h * 0.3);
+        ctx.fill();
+
+        ctx.fillStyle = '#5C7C7D';
+        ctx.beginPath();
+        ctx.moveTo(w * 0.55, 0);
+        ctx.lineTo(w, 0);
+        ctx.lineTo(w, h * 0.35);
+        ctx.quadraticCurveTo(w * 0.4, h * 0.42, 0, h * 0.45);
+        ctx.lineTo(0, h * 0.28);
+        ctx.fill();
+
+        ctx.fillStyle = '#A65336';
+        ctx.beginPath();
+        ctx.arc(w * 0.92, h * 0.44, 72, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillRect(w * 0.42, h * 0.78, w * 0.58, h * 0.22);
+
+        ctx.fillStyle = '#10375C';
+        ctx.beginPath();
+        ctx.moveTo(0, h * 0.65);
+        ctx.quadraticCurveTo(w * 0.45, h * 0.65, w * 0.52, h);
+        ctx.lineTo(0, h);
+        ctx.fill();
+
+        // Parabola axes
+        ctx.strokeStyle = '#FFFFFF';
+        ctx.lineWidth = 2.5;
+        ctx.beginPath();
+        ctx.moveTo(w * 0.32, h * 0.08);
+        ctx.lineTo(w * 0.32, h * 0.34);
+        ctx.moveTo(w * 0.12, h * 0.29);
+        ctx.lineTo(w * 0.75, h * 0.29);
+        ctx.stroke();
+
+        ctx.strokeStyle = '#FBBF24';
+        ctx.beginPath();
+        ctx.moveTo(w * 0.16, h * 0.12);
+        ctx.quadraticCurveTo(w * 0.32, h * 0.42, w * 0.52, h * 0.12);
+        ctx.stroke();
+
+        // Golden Ratio Spiral
+        ctx.strokeStyle = '#FCD34D';
+        ctx.strokeRect(w * 0.58, h * 0.11, 95, 62);
+        ctx.beginPath();
+        ctx.arc(w * 0.58 + 62, h * 0.11 + 62, 62, Math.PI, Math.PI * 1.5);
+        ctx.stroke();
+
+        // Math symbols
+        ctx.fillStyle = '#1B3B5A';
+        ctx.font = '800 34px Georgia, serif';
+        ctx.fillText('π', w * 0.14, h * 0.62);
+        ctx.fillText('∫', w * 0.14, h * 0.46);
+        ctx.fillText('∞', w * 0.52, h * 0.39);
+        ctx.font = '700 18px Inter, sans-serif';
+        ctx.fillText('X = a³ · c', w * 0.42, h * 0.61);
+
+        // 3D Sphere
+        ctx.strokeStyle = '#1B3B5A';
+        ctx.beginPath();
+        ctx.arc(w * 0.68, h * 0.56, 36, 0, Math.PI * 2);
+        ctx.ellipse(w * 0.68, h * 0.56, 36, 12, 0, 0, Math.PI * 2);
+        ctx.stroke();
+
+        applyGouacheBrushTexture(ctx, w, h, 9);
+
+      } else if (key === 'physics_prism') {
+        // Clean ivory gouache
+        ctx.fillStyle = '#F8FAFC';
+        ctx.fillRect(0, 0, w, h);
+
+        // Glass Prism & Rainbow Dispersion
+        ctx.strokeStyle = '#334155';
+        ctx.lineWidth = 3;
+        ctx.beginPath();
+        ctx.moveTo(w * 0.35, h * 0.12);
+        ctx.lineTo(w * 0.22, h * 0.26);
+        ctx.lineTo(w * 0.48, h * 0.26);
+        ctx.closePath();
+        ctx.stroke();
+
+        const rainbow = ['#EF4444', '#F97316', '#EAB308', '#22C55E', '#3B82F6', '#8B5CF6'];
+        rainbow.forEach((col, idx) => {
+          ctx.strokeStyle = col;
+          ctx.lineWidth = 3;
+          ctx.beginPath();
+          ctx.moveTo(w * 0.41, h * 0.19 + idx * 1.5);
+          ctx.lineTo(w * 0.72, h * 0.16 + idx * 5);
+          ctx.stroke();
+        });
+
+        // Bohr Atom
+        ctx.strokeStyle = '#1E293B';
+        ctx.lineWidth = 2;
+        for (let r = 0; r < 3; r++) {
+          ctx.beginPath();
+          ctx.ellipse(w * 0.72, h * 0.27, 42, 16, (r * Math.PI) / 3, 0, Math.PI * 2);
+          ctx.stroke();
+        }
+        ctx.fillStyle = '#0F766E';
+        ctx.beginPath();
+        ctx.arc(w * 0.72, h * 0.27, 7, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Physics Formulas
+        ctx.fillStyle = '#0F172A';
+        ctx.font = '800 22px Georgia, serif';
+        ctx.fillText('E = mc²', w * 0.14, h * 0.35);
+        ctx.fillText('F = ma', w * 0.22, h * 0.44);
+        ctx.fillText('λ = h / p', w * 0.32, h * 0.62);
+        ctx.font = '700 16px Inter, sans-serif';
+        ctx.fillText('G = 6.674 × 10⁻¹¹', w * 0.24, h * 0.84);
+
+        // Sine wave
+        ctx.strokeStyle = '#0284C7';
+        ctx.lineWidth = 2.5;
+        ctx.beginPath();
+        for (let x = 35; x < w - 35; x += 4) {
+          const y = h * 0.71 + Math.sin((x - 35) * 0.06) * 20;
+          if (x === 35) ctx.moveTo(x, y);
+          else ctx.lineTo(x, y);
+        }
+        ctx.stroke();
+
+        applyGouacheBrushTexture(ctx, w, h, 10);
+
+      } else if (key === 'chemistry_lab') {
+        // Cosmic deep teal & burnt sienna
+        ctx.fillStyle = '#0F3D3E';
+        ctx.fillRect(0, 0, w, h);
+
+        ctx.fillStyle = '#9A3412';
+        ctx.beginPath();
+        ctx.arc(w * 0.88, h * 0.28, 65, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Erlenmeyer flasks
+        ctx.strokeStyle = '#E2E8F0';
+        ctx.lineWidth = 3;
+        ctx.beginPath();
+        ctx.moveTo(w * 0.24, h * 0.14);
+        ctx.lineTo(w * 0.24, h * 0.2);
+        ctx.lineTo(w * 0.14, h * 0.32);
+        ctx.lineTo(w * 0.38, h * 0.32);
+        ctx.lineTo(w * 0.28, h * 0.2);
+        ctx.lineTo(w * 0.28, h * 0.14);
+        ctx.stroke();
+
+        ctx.fillStyle = '#2DD4BF';
+        ctx.beginPath();
+        ctx.moveTo(w * 0.17, h * 0.28);
+        ctx.lineTo(w * 0.35, h * 0.28);
+        ctx.lineTo(w * 0.38, h * 0.32);
+        ctx.lineTo(w * 0.14, h * 0.32);
+        ctx.fill();
+
+        // Chemical formulas
+        ctx.fillStyle = '#F8FAFC';
+        ctx.font = '800 22px Inter, sans-serif';
+        ctx.fillText('H₂O', w * 0.22, h * 0.42);
+        ctx.fillText('CO₂', w * 0.56, h * 0.44);
+        ctx.fillText('H₂SO₄', w * 0.36, h * 0.62);
+        ctx.fillText('C₆H₁₂O₆', w * 0.18, h * 0.72);
+        ctx.fillText('PV = nRT', w * 0.38, h * 0.81);
+
+        // Periodic tile badges
+        const tiles = [
+          { sym: 'H', col: '#38BDF8', x: w * 0.68, y: h * 0.08 },
+          { sym: 'O', col: '#F43F5E', x: w * 0.79, y: h * 0.08 },
+          { sym: 'C', col: '#F59E0B', x: w * 0.68, y: h * 0.14 },
+          { sym: 'N', col: '#10B981', x: w * 0.79, y: h * 0.14 },
+        ];
+        tiles.forEach((t) => {
+          ctx.fillStyle = t.col;
+          ctx.fillRect(t.x, t.y, 28, 28);
+          ctx.fillStyle = '#FFFFFF';
+          ctx.font = '800 15px Inter, sans-serif';
+          ctx.fillText(t.sym, t.x + 8, t.y + 20);
+        });
+
+        applyGouacheBrushTexture(ctx, w, h, 11);
+
+      } else if (key === 'math_physics_pastel') {
+        // Vibrant pastel blocks
+        ctx.fillStyle = '#FEF9EE';
+        ctx.fillRect(0, 0, w, h);
+
+        ctx.fillStyle = '#94B49F';
+        ctx.fillRect(0, 0, w * 0.5, h * 0.24);
+        ctx.fillStyle = '#F4978E';
+        ctx.fillRect(w * 0.5, 0, w * 0.5, h * 0.32);
+        ctx.fillStyle = '#8ECAE6';
+        ctx.beginPath();
+        ctx.arc(w * 0.35, h * 0.44, 88, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = '#F9C74F';
+        ctx.beginPath();
+        ctx.arc(w * 0.72, h * 0.62, 74, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Formulas & Prism
+        ctx.fillStyle = '#1E293B';
+        ctx.font = '800 22px Georgia, serif';
+        ctx.fillText('π', w * 0.14, h * 0.11);
+        ctx.fillText('E = mc²', w * 0.54, h * 0.48);
+        ctx.fillText('F = ma', w * 0.55, h * 0.62);
+        ctx.font = '700 16px Inter, sans-serif';
+        ctx.fillText('sin x   cos x', w * 0.35, h * 0.11);
+
+        // Prism
+        ctx.strokeStyle = '#1E293B';
+        ctx.lineWidth = 2.5;
+        ctx.beginPath();
+        ctx.moveTo(w * 0.38, h * 0.43);
+        ctx.lineTo(w * 0.26, h * 0.55);
+        ctx.lineTo(w * 0.5, h * 0.55);
+        ctx.closePath();
+        ctx.stroke();
+
+        applyGouacheBrushTexture(ctx, w, h, 12);
+        drawCalligraphyFooter(ctx, w, h, 'Toán học & Vật lý', '#1E293B', 'rgba(255,255,255,0.65)');
+
+      } else if (key === 'biology_med') {
+        // Blue & white medical/biology gouache
+        ctx.fillStyle = '#F0F9FF';
+        ctx.fillRect(0, 0, w, h);
+        ctx.fillStyle = '#0284C7';
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        ctx.lineTo(w * 0.65, 0);
+        ctx.quadraticCurveTo(w * 0.5, h * 0.5, 0, h * 0.72);
+        ctx.fill();
+
+        // Brain, Heart, Lungs, DNA icons
+        ctx.fillStyle = '#FB7185';
+        ctx.beginPath();
+        ctx.arc(w * 0.75, h * 0.34, 24, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.fillStyle = '#38BDF8';
+        ctx.beginPath();
+        ctx.ellipse(w * 0.66, h * 0.52, 18, 30, -0.2, 0, Math.PI * 2);
+        ctx.ellipse(w * 0.82, h * 0.52, 18, 30, 0.2, 0, Math.PI * 2);
+        ctx.fill();
+
+        // DNA strand
+        ctx.strokeStyle = '#FFFFFF';
+        ctx.lineWidth = 3;
+        for (let y = 40; y < 220; y += 14) {
+          const offset = Math.sin(y * 0.06) * 18;
+          ctx.beginPath();
+          ctx.moveTo(45 + offset, y);
+          ctx.lineTo(45 - offset, y);
+          ctx.stroke();
+        }
+
+        // Researcher silhouette
+        ctx.fillStyle = '#1E3A8A';
+        ctx.beginPath();
+        ctx.arc(w * 0.45, h * 0.33, 16, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = '#FFFFFF';
+        ctx.fillRect(w * 0.37, h * 0.36, 52, 85);
+
+        applyGouacheBrushTexture(ctx, w, h, 13);
+        drawCalligraphyFooter(ctx, w, h, 'Sinh học & Y học & Đời sống', '#FFFFFF', 'rgba(12,74,110,0.85)');
+
+      } else {
+        // Minimalist Flag Cream Matte
+        ctx.fillStyle = '#F6F4EF';
+        ctx.fillRect(0, 0, w, h);
+
+        // Red flag with gold star
+        ctx.fillStyle = '#DC2626';
+        ctx.fillRect(w * 0.22, h * 0.43, 38, 26);
+        ctx.fillStyle = '#FACC15';
+        ctx.beginPath();
+        ctx.arc(w * 0.22 + 19, h * 0.43 + 13, 6, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.strokeStyle = '#78350F';
+        ctx.lineWidth = 3;
+        ctx.beginPath();
+        ctx.moveTo(w * 0.22, h * 0.42);
+        ctx.lineTo(w * 0.25, h * 0.56);
+        ctx.stroke();
+
+        // Warm Calligraphy
+        ctx.font = 'italic 800 30px "Playfair Display", Georgia, serif';
+        ctx.textAlign = 'center';
+        ctx.fillStyle = '#DC2626';
+        ctx.fillText('Độc Lập', w * 0.56, h * 0.43);
+        ctx.fillText('Tự do', w * 0.58, h * 0.49);
+        ctx.fillStyle = '#EA580C';
+        ctx.fillText('Hạnh phúc', w * 0.54, h * 0.56);
+
+        applyGouacheBrushTexture(ctx, w, h, 14);
+      }
+
+      const dataUrl = canvas.toDataURL('image/png');
+      renderedArtCache[product.id] = dataUrl;
+      return dataUrl;
+    }
+
+    function generateKeycapSheetDataUrl(product) {
+      if (renderedArtCache[product.id]) return renderedArtCache[product.id];
+
+      const w = 360;
+      const h = 440;
+      const canvas = document.createElement('canvas');
+      canvas.width = w;
+      canvas.height = h;
+      const ctx = canvas.getContext('2d');
+
+      // White die-cut backing sheet
+      ctx.fillStyle = '#F8FAFC';
+      ctx.fillRect(0, 0, w, h);
+
+      const pal = product.palette; // 6 ombre shades top -> bottom
+
+      // Top scientific function rows (4 rows x 6 cols, middle 2 top slots open for REPLAY pad)
+      const sciRows = [
+        ['CALC', '∫dx', null, null, 'x⁻¹', 'log■'],
+        ['■/□', '√■', 'x²', 'x■', 'log', 'ln'],
+        ['(-)', '°’”', 'hyp', 'sin', 'cos', 'tan'],
+        ['RCL', 'ENG', '(', ')', 'S⇔D', 'M+'],
+      ];
+
+      const padX = 16;
+      const sciW = (w - padX * 2 - 5 * 6) / 6;
+      const sciH = 30;
+
+      sciRows.forEach((row, rIdx) => {
+        const y = 16 + rIdx * (sciH + 7);
+        const bgColor = pal[Math.min(rIdx, 2)];
+        row.forEach((label, cIdx) => {
+          if (!label) return;
+          const x = padX + cIdx * (sciW + 6);
+          ctx.fillStyle = bgColor;
+          roundRect(ctx, x, y, sciW, sciH, 7);
+          ctx.fill();
+
+          ctx.fillStyle = '#FFFFFF';
+          ctx.font = '700 10px Inter, sans-serif';
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillText(label, x + sciW / 2, y + sciH / 2 + 0.5);
+        });
+      });
+
+      // Bottom numeric & operator keypad (4 rows x 5 cols)
+      const numRows = [
+        ['7', '8', '9', 'DEL', 'AC'],
+        ['4', '5', '6', '×', '÷'],
+        ['1', '2', '3', '+', '−'],
+        ['0', '.', '×10ˣ', 'Ans', '='],
+      ];
+
+      const numW = (w - padX * 2 - 4 * 8) / 5;
+      const numH = 48;
+      const startNumY = 172;
+
+      numRows.forEach((row, rIdx) => {
+        const y = startNumY + rIdx * (numH + 9);
+        const rowColor = pal[Math.min(2 + rIdx, pal.length - 1)];
+        row.forEach((label, cIdx) => {
+          const x = padX + cIdx * (numW + 8);
+          const isDelAc = label === 'DEL' || label === 'AC';
+          ctx.fillStyle = isDelAc ? pal[0] : rowColor;
+          roundRect(ctx, x, y, numW, numH, 10);
+          ctx.fill();
+
+          ctx.fillStyle = rIdx === 3 && !isDelAc ? '#0F172A' : '#FFFFFF';
+          ctx.font = label.length > 2 ? '800 13px Inter, sans-serif' : '800 18px Inter, sans-serif';
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillText(label, x + numW / 2, y + numH / 2 + 1);
+        });
+      });
+
+      const dataUrl = canvas.toDataURL('image/png');
+      renderedArtCache[product.id] = dataUrl;
+      return dataUrl;
+    }
+
+    function roundRect(ctx, x, y, width, height, radius) {
+      ctx.beginPath();
+      ctx.moveTo(x + radius, y);
+      ctx.lineTo(x + width - radius, y);
+      ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
+      ctx.lineTo(x + width, y + height - radius);
+      ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+      ctx.lineTo(x + radius, y + height);
+      ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
+      ctx.lineTo(x, y + radius);
+      ctx.quadraticCurveTo(x, y, x + radius, y);
+      ctx.closePath();
+    }
+
+    function getProductArtwork(product) {
+      return product.type === 'keycap'
+        ? generateKeycapSheetDataUrl(product)
+        : generateCoverDataUrl(product);
+    }
+
+    // =========================================================================
+    // 3. STATE & INTERACTIVE LIVE STUDIO LOGIC
+    // =========================================================================
+    let activeCategory = 'all';
+    let studioModel = 'fx-580VNX';
+    let studioView = 'both';
+    let studioCoverId = 'vn-01';
+    let studioKeycapId = 'kc-01';
+
+    let cartItems = [];
+    let promoDiscountRate = 0;
+
+    function setStudioModel(model) {
+      studioModel = model;
+      document.querySelectorAll('.studio-model-btn').forEach((btn) => {
+        const active = btn.dataset.model === model;
+        btn.className = active
+          ? 'studio-model-btn py-2.5 px-3 rounded-2xl border-2 border-ocean-700 bg-ocean-50 text-ocean-800 font-bold text-xs sm:text-sm cursor-pointer'
+          : 'studio-model-btn py-2.5 px-3 rounded-2xl border-2 border-slate-200 bg-white text-slate-700 font-bold text-xs sm:text-sm cursor-pointer';
+      });
+      syncStudioPreview();
+    }
+
+    function setStudioView(view) {
+      studioView = view;
+      document.querySelectorAll('.studio-view-btn').forEach((btn) => {
+        const active = btn.dataset.view === view;
+        btn.className = active
+          ? 'studio-view-btn py-2 px-3 rounded-xl bg-ink text-white font-bold text-xs cursor-pointer'
+          : 'studio-view-btn py-2 px-3 rounded-xl bg-slate-100 text-slate-700 font-bold text-xs hover:bg-slate-200 cursor-pointer';
+      });
+
+      const backDev = document.getElementById('studio-back-device');
+      const frontDev = document.getElementById('studio-front-device');
+      if (view === 'both') {
+        backDev.classList.remove('hidden');
+        frontDev.classList.remove('hidden');
+      } else if (view === 'back') {
+        backDev.classList.remove('hidden');
+        frontDev.classList.add('hidden');
+      } else {
+        backDev.classList.add('hidden');
+        frontDev.classList.remove('hidden');
+      }
+    }
+
+    function renderStudioSelectors() {
+      const covers = PRODUCTS.filter((p) => p.type === 'cover');
+      const keycaps = PRODUCTS.filter((p) => p.type === 'keycap');
+
+      document.getElementById('studio-cover-grid').innerHTML = covers.map((c) => {
+        const active = c.id === studioCoverId;
+        return `
+          <button
+            type="button"
+            onclick="selectStudioCover('${c.id}')"
+            class="flex items-center gap-2 p-1.5 rounded-xl border-2 text-left transition-all cursor-pointer ${active ? 'border-ocean-700 bg-ocean-50' : 'border-slate-200 bg-white hover:border-slate-300'}"
+          >
+            <img src="${getProductArtwork(c)}" alt="${c.name}" class="w-8 h-11 rounded-lg object-cover shrink-0 border border-slate-100" />
+            <div class="min-w-0">
+              <p class="text-[11px] font-bold text-ink leading-tight line-clamp-2">${c.name}</p>
+              <p class="text-[10px] font-extrabold text-ocean-700 mt-0.5">${formatVnd(c.price)}</p>
+            </div>
+          </button>
+        `;
+      }).join('');
+
+      document.getElementById('studio-keycap-grid').innerHTML = keycaps.map((k) => {
+        const active = k.id === studioKeycapId;
+        const shortName = k.name.replace('Phím Ombre ', '').split(' (')[0];
+        return `
+          <button
+            type="button"
+            onclick="selectStudioKeycap('${k.id}')"
+            class="flex items-center gap-2 p-1.5 rounded-xl border-2 text-left transition-all cursor-pointer ${active ? 'border-sunset bg-orange-50' : 'border-slate-200 bg-white hover:border-slate-300'}"
+          >
+            <img src="${getProductArtwork(k)}" alt="${k.name}" class="w-8 h-9 rounded-lg object-contain bg-slate-50 shrink-0" />
+            <span class="text-[11px] font-bold text-ink truncate">${shortName}</span>
+          </button>
+        `;
+      }).join('');
+    }
+
+    function selectStudioCover(id) {
+      studioCoverId = id;
+      renderStudioSelectors();
+      syncStudioPreview();
+    }
+
+    function selectStudioKeycap(id) {
+      studioKeycapId = id;
+      renderStudioSelectors();
+      syncStudioPreview();
+    }
+
+    function tryProductInStudio(productId) {
+      const prod = PRODUCTS.find((p) => p.id === productId);
+      if (!prod) return;
+      if (prod.type === 'cover') {
+        studioCoverId = prod.id;
+      } else {
+        studioKeycapId = prod.id;
+      }
+      renderStudioSelectors();
+      syncStudioPreview();
+      document.getElementById('live-studio').scrollIntoView({ behavior: 'smooth' });
+      showToast(`Đang thử "${prod.name}" lên Casio ${studioModel}`);
+    }
+
+    function syncStudioPreview() {
+      const cover = PRODUCTS.find((p) => p.id === studioCoverId) || PRODUCTS[0];
+      const keycap = PRODUCTS.find((p) => p.id === studioKeycapId) || PRODUCTS[14];
+
+      document.getElementById('studio-back-img').src = getProductArtwork(cover);
+      document.getElementById('studio-front-img').src = getProductArtwork(keycap);
+      document.getElementById('studio-front-model-label').textContent = studioModel;
+      document.getElementById('studio-back-caption').textContent = `Nắp trượt • ${formatVnd(cover.price)}`;
+
+      const shortKeycap = keycap.name.replace('Phím Ombre ', '').split(' (')[0];
+      document.getElementById('studio-summary-model').textContent = `Casio ${studioModel}`;
+      document.getElementById('studio-summary-title').textContent = `${cover.name} + Phím ${shortKeycap}`;
+    }
+
+    // =========================================================================
+    // 4. CATALOG FILTERING, SEARCHING & RENDERING (20 ITEMS)
+    // =========================================================================
+    function setCatalogCategory(cat) {
+      activeCategory = cat;
+      document.querySelectorAll('.cat-tab-btn').forEach((btn) => {
+        const active = btn.dataset.cat === cat;
+        btn.className = active
+          ? 'cat-tab-btn px-4 py-2.5 rounded-2xl text-xs sm:text-sm font-bold bg-ink text-white shadow-xs cursor-pointer'
+          : 'cat-tab-btn px-4 py-2.5 rounded-2xl text-xs sm:text-sm font-bold bg-ivory text-slate-700 border border-slate-200 hover:border-ocean-600 cursor-pointer';
+      });
+      renderCatalog();
+    }
+
+    function renderCatalog() {
+      const query = document.getElementById('catalog-search-input').value.trim().toLowerCase();
+      const sortMode = document.getElementById('catalog-sort-select').value;
+
+      let filtered = PRODUCTS.filter((p) => {
+        const matchCat = activeCategory === 'all' || p.category === activeCategory;
+        const matchText =
+          !query ||
+          p.name.toLowerCase().includes(query) ||
+          p.desc.toLowerCase().includes(query) ||
+          p.categoryLabel.toLowerCase().includes(query);
+        return matchCat && matchText;
+      });
+
+      if (sortMode === 'price-asc') {
+        filtered = [...filtered].sort((a, b) => a.price - b.price);
+      } else if (sortMode === 'price-desc') {
+        filtered = [...filtered].sort((a, b) => b.price - a.price);
+      }
+
+      const grid = document.getElementById('product-catalog-grid');
+      if (filtered.length === 0) {
+        grid.innerHTML = `
+          <div class="col-span-full text-center py-12 bg-ivory rounded-3xl border border-slate-200">
+            <p class="font-extrabold text-base text-ink">Không tìm thấy mẫu decal phù hợp</p>
+            <p class="text-xs text-slate-500 mt-1">Thử xóa từ khóa tìm kiếm hoặc chọn danh mục khác nhé!</p>
+          </div>
+        `;
+        return;
+      }
+
+      grid.innerHTML = filtered.map((item) => {
+        const imgUrl = getProductArtwork(item);
+        const catColor =
+          item.category === 'vinavietnam'
+            ? 'bg-ocean-50 text-ocean-700 border-teal-200'
+            : item.category === 'vinmath'
+            ? 'bg-indigo-50 text-indigo-700 border-indigo-200'
+            : 'bg-orange-50 text-sunset border-orange-200';
+
+        const frameHtml =
+          item.type === 'cover'
+            ? `<div class="w-[106px] h-[214px] rounded-[20px] bg-slate-800 p-1.5 shadow-md">
+                 <div class="w-full h-full rounded-[15px] overflow-hidden bg-white relative">
+                   <img src="${imgUrl}" alt="${item.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                   <div class="absolute inset-0 matte-vinyl-sheen"></div>
+                 </div>
+               </div>`
+            : `<div class="w-[156px] h-[190px] rounded-2xl bg-white p-2 border border-slate-200 shadow-xs relative overflow-hidden">
+                 <img src="${imgUrl}" alt="${item.name}" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" />
+                 <div class="absolute inset-0 matte-vinyl-sheen"></div>
+               </div>`;
+
+        return `
+          <article class="product-card bg-ivory rounded-3xl p-4 border border-slate-200/90 shadow-2xs hover:shadow-xl flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="px-2.5 py-1 rounded-full text-[11px] font-extrabold border ${catColor}">
+                  ${item.categoryLabel}
+                </span>
+                <span class="px-2 py-0.5 rounded-full bg-white border border-slate-200 text-[10px] font-bold text-slate-600">
+                  ${item.badge}
+                </span>
+              </div>
+
+              <button
+                type="button"
+                onclick="tryProductInStudio('${item.id}')"
+                class="w-full h-60 rounded-2xl bg-gradient-to-b from-white to-slate-100/80 border border-slate-200/70 flex items-center justify-center p-3 relative group cursor-pointer"
+                title="Bấm để thử trực tiếp lên máy Casio"
+              >
+                ${frameHtml}
+              </button>
+
+              <div class="mt-3.5">
+                <div class="flex items-start justify-between gap-2">
+                  <h3 class="font-extrabold text-sm sm:text-base text-ink leading-snug">${item.name}</h3>
+                </div>
+                <p class="text-xs text-slate-500 mt-1 line-clamp-2 leading-relaxed">${item.desc}</p>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-t border-slate-200/80 space-y-2.5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-semibold text-slate-500">fx-580VNX / 570VN</span>
+                <span class="text-base font-black text-coral-600">${formatVnd(item.price)}</span>
+              </div>
+
+              <div class="grid grid-cols-2 gap-2">
+                <button
+                  type="button"
+                  onclick="tryProductInStudio('${item.id}')"
+                  class="py-2 px-2.5 rounded-xl bg-white hover:bg-slate-100 text-ink border border-slate-200 font-bold text-xs flex items-center justify-center gap-1.5 cursor-pointer transition-colors"
+                >
+                  <i class="fa-solid fa-eye text-ocean-700"></i>
+                  Thử lên máy
+                </button>
+                <button
+                  type="button"
+                  onclick="addSingleProductToCart('${item.id}')"
+                  class="py-2 px-2.5 rounded-xl bg-ocean-700 hover:bg-ocean-800 text-white font-bold text-xs flex items-center justify-center gap-1.5 cursor-pointer transition-colors"
+                >
+                  <i class="fa-solid fa-cart-plus"></i>
+                  Thêm giỏ
+                </button>
+              </div>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    // =========================================================================
+    // 5. CART, PROMO CODE & CHECKOUT RECEIPT
+    // =========================================================================
+    function addSingleProductToCart(productId) {
+      const item = PRODUCTS.find((p) => p.id === productId);
+      if (!item) return;
+      pushToCart({
+        uid: `${item.id}-${studioModel}`,
+        title: item.name,
+        meta: `${item.categoryLabel} • Casio ${studioModel}`,
+        price: item.price,
+        thumb: getProductArtwork(item),
+      });
+    }
+
+    function addCustomComboToCart(coverId, keycapId, model) {
+      const cover = PRODUCTS.find((p) => p.id === coverId) || PRODUCTS[0];
+      const keycap = PRODUCTS.find((p) => p.id === keycapId) || PRODUCTS[14];
+      const shortKc = keycap.name.replace('Phím Ombre ', '').split(' (')[0];
+
+      pushToCart({
+        uid: `combo-${cover.id}-${keycap.id}-${model}`,
+        title: `Combo Full Máy: ${cover.name} + Phím ${shortKc}`,
+        meta: `Casio ${model} • Ưu đãi trọn bộ 55k`,
+        price: 55000,
+        thumb: getProductArtwork(cover),
+      });
+    }
+
+    function handleCustomDesignOrder(e) {
+      e.preventDefault();
+      const theme = document.getElementById('custom-theme-input').value;
+      const model = document.getElementById('custom-model-input').value;
+      const customText = document.getElementById('custom-text-input').value.trim();
+      if (!customText) return;
+
+      const baseSample = PRODUCTS[0];
+      pushToCart({
+        uid: `custom-${Date.now()}`,
+        title: `Thiết Kế Độc Bản: "${customText}"`,
+        meta: `Nền ${theme} • Casio ${model}`,
+        price: 55000,
+        thumb: getProductArtwork(baseSample),
+      });
+
+      document.getElementById('custom-text-input').value = '';
+      toggleCartDrawer(true);
+    }
+
+    function pushToCart(entry) {
+      const existing = cartItems.find((c) => c.uid === entry.uid);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cartItems.push({ ...entry, qty: 1 });
+      }
+      renderCartDrawer();
+      showToast(`Đã thêm "${entry.title}" vào giỏ`);
+    }
+
+    function changeCartQty(index, delta) {
+      cartItems[index].qty += delta;
+      if (cartItems[index].qty <= 0) {
+        cartItems.splice(index, 1);
+      }
+      renderCartDrawer();
+    }
+
+    function applyPromoCode() {
+      const code = document.getElementById('promo-code-input').value.trim().toUpperCase();
+      if (code === '11A12') {
+        promoDiscountRate = 0.1;
+        renderCartDrawer();
+        showToast('Áp dụng thành công mã 11A12 (Giảm 10%)!');
+      } else {
+        promoDiscountRate = 0;
+        renderCartDrawer();
+        showToast('Mã chưa hợp lệ — hãy thử nhập mã 11A12 nhé!');
+      }
+    }
+
+    function renderCartDrawer() {
+      const count = cartItems.reduce((sum, item) => sum + item.qty, 0);
+      document.getElementById('cart-count-badge').textContent = count;
+
+      const container = document.getElementById('cart-items-container');
+      const footer = document.getElementById('cart-footer-box');
+
+      if (cartItems.length === 0) {
+        footer.classList.add('hidden');
+        container.innerHTML = `
+          <div class="text-center py-16 space-y-2">
+            <i class="fa-solid fa-bag-shopping text-3xl text-ocean-600"></i>
+            <p class="font-extrabold text-sm text-ink">Giỏ hàng của bạn đang trống</p>
+            <p class="text-xs text-slate-500">Hãy chọn mẫu nắp trượt Gouache hoặc phím bấm Ombre để trải nghiệm nhé!</p>
+          </div>
+        `;
+        return;
+      }
+
+      footer.classList.remove('hidden');
+      let subtotal = 0;
+
+      container.innerHTML = cartItems.map((item, idx) => {
+        subtotal += item.price * item.qty;
+        return `
+          <div class="flex items-center justify-between gap-3 p-3 rounded-2xl bg-ivory border border-slate-200/80">
+            <div class="flex items-center gap-3 min-w-0">
+              <img src="${item.thumb}" alt="${item.title}" class="w-12 h-14 rounded-xl object-cover bg-white border border-slate-200 shrink-0" />
+              <div class="min-w-0">
+                <p class="text-xs sm:text-sm font-extrabold text-ink truncate">${item.title}</p>
+                <p class="text-[11px] text-slate-500 truncate">${item.meta}</p>
+                <p class="text-xs font-extrabold text-ocean-700 mt-0.5">${formatVnd(item.price)}</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-1.5 bg-white px-2 py-1 rounded-xl border border-slate-200 shrink-0">
+              <button type="button" onclick="changeCartQty(${idx}, -1)" class="w-6 h-6 font-bold text-slate-600 hover:text-ink cursor-pointer">−</button>
+              <span class="text-xs font-extrabold w-4 text-center">${item.qty}</span>
+              <button type="button" onclick="changeCartQty(${idx}, 1)" class="w-6 h-6 font-bold text-slate-600 hover:text-ink cursor-pointer">+</button>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      const discount = Math.round(subtotal * promoDiscountRate);
+      const finalTotal = subtotal - discount;
+
+      document.getElementById('cart-subtotal-text').textContent = formatVnd(subtotal);
+      const discountRow = document.getElementById('cart-discount-row');
+      if (discount > 0) {
+        discountRow.classList.remove('hidden');
+        document.getElementById('cart-discount-text').textContent = `-${formatVnd(discount)}`;
+      } else {
+        discountRow.classList.add('hidden');
+      }
+      document.getElementById('cart-final-total-text').textContent = formatVnd(finalTotal);
+    }
+
+    function toggleCartDrawer(open) {
+      const drawer = document.getElementById('cart-drawer');
+      const backdrop = document.getElementById('cart-backdrop');
+      if (open) {
+        backdrop.classList.remove('hidden');
+        drawer.classList.remove('translate-x-full');
+        renderCartDrawer();
+      } else {
+        drawer.classList.add('translate-x-full');
+        backdrop.classList.add('hidden');
+      }
+    }
+
+    function toggleMobileMenu() {
+      document.getElementById('mobile-nav').classList.toggle('hidden');
+    }
+
+    function completeCheckoutOrder() {
+      const name = document.getElementById('checkout-name').value.trim();
+      const contact = document.getElementById('checkout-contact').value.trim();
+      if (!name || !contact) {
+        showToast('Vui lòng nhập họ tên và lớp/SĐT nhận hàng!');
+        return;
+      }
+
+      const finalTotalStr = document.getElementById('cart-final-total-text').textContent;
+      const orderCode = `QN-11A12-${Math.floor(1000 + Math.random() * 9000)}`;
+
+      cartItems = [];
+      promoDiscountRate = 0;
+      document.getElementById('checkout-name').value = '';
+      document.getElementById('checkout-contact').value = '';
+      document.getElementById('promo-code-input').value = '';
+      renderCartDrawer();
+      toggleCartDrawer(false);
+
+      document.getElementById('receipt-summary-text').innerHTML =
+        `Cảm ơn <strong>${name}</strong> (<strong>${contact}</strong>) đã đặt hàng tại <strong>VinaVietnam &amp; VinMath</strong> (Tổ 4 – Lớp 11A12). Tổng thanh toán: <strong class="text-coral-600">${finalTotalStr}</strong>.`;
+      document.getElementById('receipt-code-box').textContent = `MÃ PHIẾU ĐẶT HÀNG: ${orderCode}`;
+
+      const modal = document.getElementById('receipt-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeReceiptModal() {
+      const modal = document.getElementById('receipt-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function formatVnd(amount) {
+      return `${amount.toLocaleString('vi-VN')}đ`;
+    }
+
+    let toastTimeout = null;
+    function showToast(msg) {
+      const banner = document.getElementById('toast-banner');
+      document.getElementById('toast-message').textContent = msg;
+      banner.classList.remove('opacity-0');
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        banner.classList.add('opacity-0');
+      }, 2500);
+    }
+
+    // =========================================================================
+    // 6. INITIALIZE APPLICATION ON PAGE LOAD
+    // =========================================================================
+    document.addEventListener('DOMContentLoaded', () => {
+      // Populate Hero Preview images immediately
+      document.getElementById('hero-cover-preview').src = getProductArtwork(PRODUCTS[0]);
+      document.getElementById('hero-keycap-preview').src = getProductArtwork(PRODUCTS[14]);
+
+      renderStudioSelectors();
+      syncStudioPreview();
+      renderCatalog();
+      renderCartDrawer();
+    });
+  </script>
+</body>
+</html>
